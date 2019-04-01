@@ -1,30 +1,16 @@
-var Discord = require('discord.io');
-var loggre = require('winston');
-var auth = require('./auth.json');
-var bot = new Discord.Client({
-	token: auth.token,
-	autorun: true
-});
+const Discord = require('discord.js');
+const auth = require('./auth.json');
+const client = new Discord.Client();
 var isReady = true;
 
-// Configure loggre settings
-loggre.remove(loggre.transports.Console);
-loggre.add(new loggre.transports.Console, {
-	colorize: true
-});
-loggre.level = 'debug';
-
-// Initialize Discord Bot
-bot.on('ready', function (evt) {
-	loggre.info('Connected');
-	loggre.info('Logged in as: ');
-	loggre.info(bot.victimname + ' - (' + bot.id + ')');
+client.on('ready', () => {
+	console.log('Ready!');
 });
 
-bot.on('message', function (victim, victimID, channelID, message, evt) {
-	message = message.toLowerCase();
+client.on('message', message => {
+	content = message.content.toLowerCase();
 	
-	if (isReady && (message.includes('bean') || message.includes('spill') || message.includes('eat') || message.includes('life is strange'))) {
+	if (isReady && (content.includes('bean') || content.includes('spill') || content.includes('eat') || content.includes('life is strange'))) {
 		isReady = false;
 		var voiceChannel = message.member.voiceChannel;
 		voiceChannel.join().then(connection => {
@@ -34,10 +20,5 @@ bot.on('message', function (victim, victimID, channelID, message, evt) {
 		isReady = true;
 	}
 });
-//                bot.sendMessage({
-///                    to: channelID,
-//                    message: 'Pong!'
-//                });
-//            break;
- //        }
- //    }
+
+client.login(auth.token);
