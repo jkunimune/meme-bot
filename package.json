@@ -1,0 +1,11 @@
+{
+	"name": "meme-bot",
+	"version": "1.0.0",
+	"description": "memes",
+	"main": "index.js",
+	"author": "The Latent Hatred of the Atlas Mountains",
+	"dependencies": {
+		"discord.io": "https://github.com/woor/discord.io/tarball/gateway_v6",
+		"winston": "^3.2.1"
+	}
+}
