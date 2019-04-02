@@ -15,9 +15,10 @@ client.on('message', message => {
 		['mii', ['mii','doot','yumbo','music']],
 		['iim', ['justin', 'jason', 'nosaj', 'nitsuj', 'natsuji', 'galactic ketchup']],
 		['yahaha', ['korok', 'yahaha', 'seed', 'ha']],
-		['heartbreak', ['sad', 'die', 'broken', 'determination']],
-		['cat', ['feed', 'dying', 'charger', 'hungry']],
+		['heartbreak', ['sad', 'die', 'broken', 'determination', 'rip']],
+		['cat', ['feed', 'dying', 'charger', 'hungry', 'cat']],
 		['dog', ['dog', 'cute', 'annoying', 'toby fox']],
+		['noting', ['absolutely noting', 'absolutelynoting', ':noting:']],
 	];
 	
 	songs.forEach(songInfo => {
@@ -26,14 +27,17 @@ client.on('message', message => {
 		triggers.forEach(trigger => {
 			if (isReady && content.includes(trigger)) {
 				isReady = false;
+				console.log('Playing '+song+'.mp3');
 				var voiceChannel = message.member.voiceChannel;
-				voiceChannel.join().then(connection => {
-					const dispatcher = connection.playFile('./res/'+song+'.mp3');
-					dispatcher.on('end', end => {
-						voiceChannel.leave();
-						isReady = true;
-					});
-				}).catch(err => console.log(err));
+				if (voiceChannel) {
+					voiceChannel.join().then(connection => {
+						const dispatcher = connection.playFile('./res/'+song+'.mp3');
+						dispatcher.on('end', end => {
+							voiceChannel.leave();
+							isReady = true;
+						});
+					}).catch(err => console.log(err));
+				}
 			}
 		});
 	});
