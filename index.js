@@ -26,17 +26,21 @@ client.on('message', message => {
 		const triggers = songInfo[1];
 		triggers.forEach(trigger => {
 			if (isReady && content.includes(trigger)) {
-				isReady = false;
-				console.log('Playing '+song+'.mp3');
 				var voiceChannel = message.member.voiceChannel;
 				if (voiceChannel) {
+					isReady = false;
+					console.log('Playing '+song+'.mp3');
 					voiceChannel.join().then(connection => {
 						const dispatcher = connection.playFile('./res/'+song+'.mp3');
 						dispatcher.on('end', end => {
 							voiceChannel.leave();
+							console.log('Done playing '+song+'.mp3');
 							isReady = true;
 						});
-					}).catch(err => console.log(err));
+					}).catch(err => {
+						console.log(err)
+						isReady = true;
+					});
 				}
 			}
 		});
