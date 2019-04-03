@@ -1,0 +1,3708 @@
+{
+  "version": "2.0.10",
+  "replacements": [
+    {
+      "active": true,
+      "case": "Maintain",
+      "repA": "/\\bW[a-z]+s\\b/",
+      "repB": "wuslopebos",
+      "type": "RegEx"
+    },
+    {
+      "active": true,
+      "case": "Maintain",
+      "repA": "/\\bW[a-zA-Z]+[a-rt-zA-RT-Z]\\b/",
+      "repB": "wuslopebo",
+      "type": "RegEx"
+    },
+    {
+      "active": true,
+      "case": "Maintain",
+      "repA": "/\\bY[a-zA-Z]+s\\b/",
+      "repB": "yuslopebos",
+      "type": "RegEx"
+    },
+    {
+      "active": true,
+      "case": "Maintain",
+      "repA": "/\\bY[a-zA-Z]+[a-rt-zA-RT-Z]\\b/",
+      "repB": "yuslopebo",
+      "type": "RegEx"
+    },
+    {
+      "active": true,
+      "case": "Maintain",
+      "repA": "/\\bcloud ?watch\\b/i",
+      "repB": "cloud gaze",
+      "type": "RegEx"
+    },
+    {
+      "active": true,
+      "case": "Maintain",
+      "repA": "/\\bcloud ?watch/i",
+      "repB": "cloud gaz",
+      "type": "RegEx"
+    },
+    {
+      "active": true,
+      "case": "Maintain",
+      "repA": "/\\bstar ?gaz(e\\b)?/i",
+      "repB": "starwatch",
+      "type": "RegEx"
+    },
+    {
+      "active": false,
+      "case": "Maintain",
+      "repA": "/\\bJustin Beiber\\b/i",
+      "repB": "jason biever",
+      "type": "RegEx"
+    },
+    {
+      "active": false,
+      "case": "Maintain",
+      "repA": "/\\bBeiber\\b/i",
+      "repB": "biever",
+      "type": "RegEx"
+    },
+    {
+      "active": true,
+      "case": "Maintain",
+      "repA": "/\\bJustin\\b/i",
+      "repB": "nitsuj",
+      "type": "RegEx"
+    },
+    {
+      "active": true,
+      "case": "Maintain",
+      "repA": "/\\bKunimune\\b/i",
+      "repB": "enuminuk",
+      "type": "RegEx"
+    },
+    {
+      "active": false,
+      "case": "Maintain",
+      "repA": "/\\bDevon\\b/i",
+      "repB": "noved",
+      "type": "RegEx"
+    },
+    {
+      "active": false,
+      "case": "Maintain",
+      "repA": "/\\bLee\\b/i",
+      "repB": "eel",
+      "type": "RegEx"
+    },
+    {
+      "active": false,
+      "case": "Maintain",
+      "repA": "/\\bJonathan\\b/i",
+      "repB": "notanoj",
+      "type": "RegEx"
+    },
+    {
+      "active": false,
+      "case": "Maintain",
+      "repA": "/\\bJon\\b/i",
+      "repB": "noj",
+      "type": "RegEx"
+    },
+    {
+      "active": false,
+      "case": "Maintain",
+      "repA": "/\\bMr(\\.)?\\b/i",
+      "repB": "rm\\I\\1:.;",
+      "type": "RegEx"
+    },
+    {
+      "active": false,
+      "case": "Maintain",
+      "repA": "/\\bMrs(\\.)?\\b/i",
+      "repB": "srm\\I\\1:.;",
+      "type": "RegEx"
+    },
+    {
+      "active": false,
+      "case": "Maintain",
+      "repA": "/\\bAaron\\b/i",
+      "repB": "noraa",
+      "type": "RegEx"
+    },
+    {
+      "active": false,
+      "case": "Maintain",
+      "repA": "/\\bDengler\\b/i",
+      "repB": "relgned",
+      "type": "RegEx"
+    },
+    {
+      "active": false,
+      "case": "Maintain",
+      "repA": "/\\bDouglas\\b/i",
+      "repB": "salguod",
+      "type": "RegEx"
+    },
+    {
+      "active": false,
+      "case": "Maintain",
+      "repA": "/\\bKiang\\b/i",
+      "repB": "gnaik",
+      "type": "RegEx"
+    },
+    {
+      "active": false,
+      "case": "Maintain",
+      "repA": "/\\bTed\\b/i",
+      "repB": "Det",
+      "type": "RegEx"
+    },
+    {
+      "active": false,
+      "case": "Maintain",
+      "repA": "/\\bLandgraf\\b/i",
+      "repB": "fargdnal",
+      "type": "RegEx"
+    },
+    {
+      "active": false,
+      "case": "Maintain",
+      "repA": "/\\bLai\\b/i",
+      "repB": "ial",
+      "type": "RegEx"
+    },
+    {
+      "active": false,
+      "case": "Maintain",
+      "repA": "/\\bJohnson\\b/i",
+      "repB": "nosnhoj",
+      "type": "RegEx"
+    },
+    {
+      "active": false,
+      "case": "Maintain",
+      "repA": "/\\bKiana\\b/i",
+      "repB": "anaikl",
+      "type": "RegEx"
+    },
+    {
+      "active": false,
+      "case": "Maintain",
+      "repA": "/\\bKim\\b/i",
+      "repB": "mik",
+      "type": "RegEx"
+    },
+    {
+      "active": false,
+      "case": "Maintain",
+      "repA": "/\\bEmily\\b/i",
+      "repB": "ylime",
+      "type": "RegEx"
+    },
+    {
+      "active": false,
+      "case": "Maintain",
+      "repA": "/\\bLung\\b/i",
+      "repB": "gnul",
+      "type": "RegEx"
+    },
+    {
+      "active": false,
+      "case": "Maintain",
+      "repA": "/\\bWilliam\\b/i",
+      "repB": "Will-I-Am",
+      "type": "RegEx"
+    },
+    {
+      "active": false,
+      "case": "Maintain",
+      "repA": "/\\bKwok\\b/i",
+      "repB": "Kowk",
+      "type": "RegEx"
+    },
+    {
+      "active": true,
+      "case": "Maintain",
+      "repA": "/\\bGalactic ?Ketchup\\b/i",
+      "repB": "Citcalag Puhctek",
+      "type": "RegEx"
+    },
+    {
+      "active": true,
+      "case": "Maintain",
+      "repA": "/\\bGalactic\\b/i",
+      "repB": "Citcalag",
+      "type": "RegEx"
+    },
+    {
+      "active": false,
+      "case": "Maintain",
+      "repA": "/robotic/i",
+      "repB": "robo-tick",
+      "type": "RegEx"
+    },
+    {
+      "active": false,
+      "case": "Maintain",
+      "repA": "/\\bdisney\\b/i",
+      "repB": "EVIL",
+      "type": "RegEx"
+    },
+    {
+      "active": false,
+      "case": "Maintain",
+      "repA": "brownies",
+      "repB": "bronies",
+      "type": "Swap"
+    },
+    {
+      "active": false,
+      "case": "Maintain",
+      "repA": "brownie",
+      "repB": "brony",
+      "type": "Swap"
+    },
+    {
+      "active": true,
+      "case": "Maintain",
+      "repA": "/\\bbye\\b/i",
+      "repB": "jane",
+      "type": "RegEx"
+    },
+    {
+      "active": false,
+      "case": "Maintain",
+      "repA": "/\\bgoodbye\\b/i",
+      "repB": "jane",
+      "type": "RegEx"
+    },
+    {
+      "active": true,
+      "case": "Maintain",
+      "repA": "/\\bhello\\b/i",
+      "repB": "ollef",
+      "type": "RegEx"
+    },
+    {
+      "active": false,
+      "case": "Maintain",
+      "repA": "/\\beat\\b/i",
+      "repB": "feed",
+      "type": "RegEx"
+    },
+    {
+      "active": false,
+      "case": "Maintain",
+      "repA": "/\\bate\\b/i",
+      "repB": "fed",
+      "type": "RegEx"
+    },
+    {
+      "active": true,
+      "case": "Maintain",
+      "repA": "/\\bcrazy\\b/i",
+      "repB": "cra cray",
+      "type": "RegEx"
+    },
+    {
+      "active": true,
+      "case": "Maintain",
+      "repA": "/\\btotally\\b/i",
+      "repB": "totes m'goats",
+      "type": "RegEx"
+    },
+    {
+      "active": false,
+      "case": "Maintain",
+      "repA": "/\\bvery\\b/i",
+      "repB": "totes m'goats",
+      "type": "RegEx"
+    },
+    {
+      "active": true,
+      "case": "Maintain",
+      "repA": "/\\bgross\\b/i",
+      "repB": "grody",
+      "type": "RegEx"
+    },
+    {
+      "active": false,
+      "case": "Maintain",
+      "repA": "/\\bdisgusting\\b/i",
+      "repB": "grody",
+      "type": "RegEx"
+    },
+    {
+      "active": true,
+      "case": "Maintain",
+      "repA": "/\\bridiculous\\b/i",
+      "repB": "redonkadonk",
+      "type": "RegEx"
+    },
+    {
+      "active": false,
+      "case": "Maintain",
+      "repA": "/\\binsanity\\b/i",
+      "repB": "a severe case of the cra crays",
+      "type": "RegEx"
+    },
+    {
+      "active": false,
+      "case": "Maintain",
+      "repA": "/\\blawn\\b/i",
+      "repB": "ground which has had water poured on it to turn it green",
+      "type": "RegEx"
+    },
+    {
+      "active": false,
+      "case": "Maintain",
+      "repA": "/\\btoilet\\b/i",
+      "repB": "bowl of drinking water which we urinate into and then throw away",
+      "type": "RegEx"
+    },
+    {
+      "active": false,
+      "case": "Maintain",
+      "repA": "/\\bwater\\sthe\\b/i",
+      "repB": "pour water on the",
+      "type": "RegEx"
+    },
+    {
+      "active": true,
+      "case": "Maintain",
+      "repA": "/\\bflash ?light\\b/i",
+      "repB": "photon cannon",
+      "type": "RegEx"
+    },
+    {
+      "active": true,
+      "case": "Maintain",
+      "repA": "/\\bgunn?/i",
+      "repB": "blaster",
+      "type": "RegEx"
+    },
+    {
+      "active": true,
+      "case": "Maintain",
+      "repA": "/\\bshoot/i",
+      "repB": "blast",
+      "type": "RegEx"
+    },
+    {
+      "active": true,
+      "case": "Maintain",
+      "repA": "/\\bcountr(y|ie)/i",
+      "repB": "civ",
+      "type": "RegEx"
+    },
+    {
+      "active": true,
+      "case": "Maintain",
+      "repA": "/noon/i",
+      "repB": "sunhigh",
+      "type": "RegEx"
+    },
+    {
+      "active": false,
+      "case": "Maintain",
+      "repA": "/yolo/i",
+      "repB": "yoloblomlmtaasosbtdpwkeoboiodawcheoboitod",
+      "type": "RegEx"
+    },
+    {
+      "active": false,
+      "case": "Maintain",
+      "repA": "/\\bfirst[ -]aid[ -]kit\\b/i",
+      "repB": "medkit",
+      "type": "RegEx"
+    },
+    {
+      "active": true,
+      "case": "Maintain",
+      "repA": "/\\bhospital(s)?\\b/i",
+      "repB": "medbay\\I\\1:s;",
+      "type": "RegEx"
+    },
+    {
+      "active": false,
+      "case": "Maintain",
+      "repA": "/\\bmay the lord be with you\\b/i",
+      "repB": "may the force be with you",
+      "type": "RegEx"
+    },
+    {
+      "active": true,
+      "case": "Maintain",
+      "repA": "/\\banimal/i",
+      "repB": "passive mob",
+      "type": "RegEx"
+    },
+    {
+      "active": true,
+      "case": "Maintain",
+      "repA": "/\\bmonster/i",
+      "repB": "hostile mob",
+      "type": "RegEx"
+    },
+    {
+      "active": false,
+      "case": "Maintain",
+      "repA": "/\\bcomp(uter)?[ -]sci(ence)?\\b/i",
+      "repB": "camp skis",
+      "type": "RegEx"
+    },
+    {
+      "active": false,
+      "case": "Maintain",
+      "repA": "/\\bsci(ence)?[ -]fi(ction)?\\b/i",
+      "repB": "skience ficus-shin",
+      "type": "RegEx"
+    },
+    {
+      "active": true,
+      "case": "Maintain",
+      "repA": "/\\bwant to\\b/i",
+      "repB": "yearn to",
+      "type": "RegEx"
+    },
+    {
+      "active": true,
+      "case": "Maintain",
+      "repA": "/\\bwants to\\b/i",
+      "repB": "yearns to",
+      "type": "RegEx"
+    },
+    {
+      "active": true,
+      "case": "Maintain",
+      "repA": "/\\bwanted to\\b/i",
+      "repB": "yearned to",
+      "type": "RegEx"
+    },
+    {
+      "active": true,
+      "case": "Maintain",
+      "repA": "/\\bwant\\b/i",
+      "repB": "yearn for",
+      "type": "RegEx"
+    },
+    {
+      "active": true,
+      "case": "Maintain",
+      "repA": "/\\bwants\\b/i",
+      "repB": "yearns for",
+      "type": "RegEx"
+    },
+    {
+      "active": true,
+      "case": "Maintain",
+      "repA": "/\\bwanted\\b/i",
+      "repB": "yearned for",
+      "type": "RegEx"
+    },
+    {
+      "active": true,
+      "case": "Override",
+      "repA": "/\\bIt [wW]as\\b/",
+      "repB": "'Twas",
+      "type": "RegEx"
+    },
+    {
+      "active": true,
+      "case": "Maintain",
+      "repA": "/\\btherefore\\b/i",
+      "repB": "ergo",
+      "type": "RegEx"
+    },
+    {
+      "active": true,
+      "case": "Maintain",
+      "repA": "/\\bproud\\b/i",
+      "repB": "bumptious",
+      "type": "RegEx"
+    },
+    {
+      "active": true,
+      "case": "Maintain",
+      "repA": "/\\bbelittl/i",
+      "repB": "floccinaucinihilipilificat",
+      "type": "RegEx"
+    },
+    {
+      "active": false,
+      "case": "Maintain",
+      "repA": "/\\bdisparag/i",
+      "repB": "floccinaucinihilipilificat",
+      "type": "RegEx"
+    },
+    {
+      "active": true,
+      "case": "Maintain",
+      "repA": "/\\bdeprecat/i",
+      "repB": "floccinaucinihilipilificat",
+      "type": "RegEx"
+    },
+    {
+      "active": false,
+      "case": "Maintain",
+      "repA": "/\\bembellishment\\b/i",
+      "repB": "fance",
+      "type": "RegEx"
+    },
+    {
+      "active": true,
+      "case": "Maintain",
+      "repA": "/\\bclassiness\\b/i",
+      "repB": "fance",
+      "type": "RegEx"
+    },
+    {
+      "active": true,
+      "case": "Maintain",
+      "repA": "/\\bsnazz?\\b/i",
+      "repB": "fance",
+      "type": "RegEx"
+    },
+    {
+      "active": true,
+      "case": "Maintain",
+      "repA": "/\\bimpossible\\b/i",
+      "repB": "impossibru",
+      "type": "RegEx"
+    },
+    {
+      "active": false,
+      "case": "Maintain",
+      "repA": "/\\bgotta catch '?em all\\b/i",
+      "repB": "gotta catch each one",
+      "type": "RegEx"
+    },
+    {
+      "active": false,
+      "case": "Maintain",
+      "repA": "/\\byour\\sa\\b/i",
+      "repB": "you're a",
+      "type": "RegEx"
+    },
+    {
+      "active": false,
+      "case": "Maintain",
+      "repA": "/\\byour gay\\b/i",
+      "repB": "your sexual orientation is unclear",
+      "type": "RegEx"
+    },
+    {
+      "active": false,
+      "case": "Maintain",
+      "repA": "/\\bass(hole)?\\b/i",
+      "repB": "butt\\I\\1:hole;",
+      "type": "RegEx"
+    },
+    {
+      "active": false,
+      "case": "Maintain",
+      "repA": "/\\bbitche?/i",
+      "repB": "female dog",
+      "type": "RegEx"
+    },
+    {
+      "active": true,
+      "case": "Override",
+      "repA": "/\\bNorth America\\b/i",
+      "repB": "That Continent with Militaryland on it",
+      "type": "RegEx"
+    },
+    {
+      "active": true,
+      "case": "Override",
+      "repA": "/\\bSouth America\\b/i",
+      "repB": "That Continent below the one with Militaryland",
+      "type": "RegEx"
+    },
+    {
+      "active": true,
+      "case": "Maintain",
+      "repA": "/\\bUnited States\\b/i",
+      "repB": "Militaristic States",
+      "type": "RegEx"
+    },
+    {
+      "active": true,
+      "case": "Maintain",
+      "repA": "/American/i",
+      "repB": "Militarylandian",
+      "type": "RegEx"
+    },
+    {
+      "active": true,
+      "case": "Maintain",
+      "repA": "/America/i",
+      "repB": "Militaryland",
+      "type": "RegEx"
+    },
+    {
+      "active": true,
+      "case": "Maintain",
+      "repA": "/\\bU\\.?S(\\.?A)?\\.?/",
+      "repB": "MS\\I\\1:M;",
+      "type": "RegEx"
+    },
+    {
+      "active": false,
+      "case": "Override",
+      "repA": "/\\bmadness\\b/i",
+      "repB": "SPARTA",
+      "type": "RegEx"
+    },
+    {
+      "active": false,
+      "case": "Maintain",
+      "repA": "/\\bashes,? ashes\\b/i",
+      "repB": "achoo cough ack sputter",
+      "type": "RegEx"
+    },
+    {
+      "active": false,
+      "case": "Override",
+      "repA": "/\\bfall down\\b/i",
+      "repB": "DIE",
+      "type": "RegEx"
+    },
+    {
+      "active": false,
+      "case": "Override",
+      "repA": "/\\b(did|could)n'?t (wake|get) up in the morning\\b/i",
+      "repB": "DIED",
+      "type": "RegEx"
+    },
+    {
+      "active": true,
+      "case": "Override",
+      "repA": "/space/i",
+      "repB": "SPAAAAACE",
+      "type": "RegEx"
+    },
+    {
+      "active": true,
+      "case": "Maintain",
+      "repA": "/imagination/i",
+      "repB": "imaaagination",
+      "type": "RegEx"
+    },
+    {
+      "active": false,
+      "case": "Maintain",
+      "repA": "/\\bcapitalism\\b/i",
+      "repB": "freedom",
+      "type": "RegEx"
+    },
+    {
+      "active": false,
+      "case": "Maintain",
+      "repA": "/\\bcapitalist\\b/i",
+      "repB": "free",
+      "type": "RegEx"
+    },
+    {
+      "active": false,
+      "case": "Maintain",
+      "repA": "/\\bcommunism\\b/i",
+      "repB": "order",
+      "type": "RegEx"
+    },
+    {
+      "active": false,
+      "case": "Maintain",
+      "repA": "/\\bcommunist\\b/i",
+      "repB": "ordered",
+      "type": "RegEx"
+    },
+    {
+      "active": false,
+      "case": "Maintain",
+      "repA": "/\\bfascism\\b/i",
+      "repB": "autocracy",
+      "type": "RegEx"
+    },
+    {
+      "active": false,
+      "case": "Maintain",
+      "repA": "/\\bfascist\\b/i",
+      "repB": "autocratic",
+      "type": "RegEx"
+    },
+    {
+      "active": false,
+      "case": "Maintain",
+      "repA": "/\\bhave faith\\b/i",
+      "repB": "believe without any logical reason to do so",
+      "type": "RegEx"
+    },
+    {
+      "active": false,
+      "case": "Maintain",
+      "repA": "/\\bhad faith\\b/i",
+      "repB": "believed without any logical reason to do so",
+      "type": "RegEx"
+    },
+    {
+      "active": false,
+      "case": "Maintain",
+      "repA": "/\\bforest\\b/i",
+      "repB": "oxygen-factory",
+      "type": "RegEx"
+    },
+    {
+      "active": false,
+      "case": "Maintain",
+      "repA": "/\\bforests\\b/i",
+      "repB": "oxygen-factories",
+      "type": "RegEx"
+    },
+    {
+      "active": false,
+      "case": "Maintain",
+      "repA": "/Morgan Freeman/i",
+      "repB": "God",
+      "type": "RegEx"
+    },
+    {
+      "active": true,
+      "case": "Maintain",
+      "repA": "/\\bidiot/i",
+      "repB": "antidisestablishmentarian",
+      "type": "RegEx"
+    },
+    {
+      "active": false,
+      "case": "Maintain",
+      "repA": "/\\bidiocy\\b/i",
+      "repB": "antidisestablishmentarianism",
+      "type": "RegEx"
+    },
+    {
+      "active": false,
+      "case": "Maintain",
+      "repA": "/Osama\\sBin\\sLaden/i",
+      "repB": "Obama Bin Laden",
+      "type": "RegEx"
+    },
+    {
+      "active": false,
+      "case": "Maintain",
+      "repA": "/\\bmoron/i",
+      "repB": "Wheatley",
+      "type": "RegEx"
+    },
+    {
+      "active": false,
+      "case": "Maintain",
+      "repA": "/\\bpink\\b/i",
+      "repB": "minus-green",
+      "type": "RegEx"
+    },
+    {
+      "active": false,
+      "case": "Maintain",
+      "repA": "/\\bincrement/i",
+      "repB": "++",
+      "type": "RegEx"
+    },
+    {
+      "active": false,
+      "case": "Maintain",
+      "repA": "/\\bdecrement/i",
+      "repB": "--",
+      "type": "RegEx"
+    },
+    {
+      "active": true,
+      "case": "Maintain",
+      "repA": "/\\bMcDonald[^\\s\\w]?s\\b/i",
+      "repB": "The Krusty Krab",
+      "type": "RegEx"
+    },
+    {
+      "active": true,
+      "case": "Maintain",
+      "repA": "/\\bBig\\s?Mac\\b/i",
+      "repB": "Krabby Patty",
+      "type": "RegEx"
+    },
+    {
+      "active": true,
+      "case": "Maintain",
+      "repA": "/\\bBig\\s?Macs\\b/i",
+      "repB": "Krabby Patties",
+      "type": "RegEx"
+    },
+    {
+      "active": true,
+      "case": "Maintain",
+      "repA": "/\\bBurger\\s?King/i",
+      "repB": "The Chum Bucket",
+      "type": "RegEx"
+    },
+    {
+      "active": true,
+      "case": "Maintain",
+      "repA": "/Whopper/i",
+      "repB": "Chum Burger",
+      "type": "RegEx"
+    },
+    {
+      "active": true,
+      "case": "Maintain",
+      "repA": "/french\\sfrie/i",
+      "repB": "kelp frie",
+      "type": "RegEx"
+    },
+    {
+      "active": true,
+      "case": "Maintain",
+      "repA": "/chicken[\\s_\\-]((mc)?nugget|finger|tender|strip|fillet)/i",
+      "repB": "coral bit",
+      "type": "RegEx"
+    },
+    {
+      "active": false,
+      "case": "Maintain",
+      "repA": "/\\bpi\\b/i",
+      "repB": "half-tau",
+      "type": "RegEx"
+    },
+    {
+      "active": false,
+      "case": "Maintain",
+      "repA": "/\\bπ\\b/i",
+      "repB": "τ/2",
+      "type": "RegEx"
+    },
+    {
+      "active": false,
+      "case": "Maintain",
+      "repA": "/\\\\pi/i",
+      "repB": "\\tau/2",
+      "type": "RegEx"
+    },
+    {
+      "active": false,
+      "case": "Maintain",
+      "repA": "/\\bbeef/i",
+      "repB": "cow",
+      "type": "RegEx"
+    },
+    {
+      "active": false,
+      "case": "Maintain",
+      "repA": "/\\b(pork|ham)/i",
+      "repB": "pig",
+      "type": "RegEx"
+    },
+    {
+      "active": false,
+      "case": "Maintain",
+      "repA": "/\\bpoultry/i",
+      "repB": "bird",
+      "type": "RegEx"
+    },
+    {
+      "active": false,
+      "case": "Maintain",
+      "repA": "/\\bvenison/i",
+      "repB": "deer",
+      "type": "RegEx"
+    },
+    {
+      "active": false,
+      "case": "Maintain",
+      "repA": "/\\bveal/i",
+      "repB": "baby cow",
+      "type": "RegEx"
+    },
+    {
+      "active": false,
+      "case": "Maintain",
+      "repA": "/\\bextermination\\b/i",
+      "repB": "genocide",
+      "type": "RegEx"
+    },
+    {
+      "active": false,
+      "case": "Maintain",
+      "repA": "/exterminator/i",
+      "repB": "murderer",
+      "type": "RegEx"
+    },
+    {
+      "active": false,
+      "case": "Maintain",
+      "repA": "/exterminat(e\\b)?/i",
+      "repB": "murder",
+      "type": "RegEx"
+    },
+    {
+      "active": false,
+      "case": "Maintain",
+      "repA": "/\\bassassinat/i",
+      "repB": "delet",
+      "type": "RegEx"
+    },
+    {
+      "active": true,
+      "case": "Maintain",
+      "repA": "/\\bconfus/i",
+      "repB": "confabulat",
+      "type": "RegEx"
+    },
+    {
+      "active": true,
+      "case": "Maintain",
+      "repA": "/\\bconspiracy\\b/i",
+      "repB": "collusion",
+      "type": "RegEx"
+    },
+    {
+      "active": false,
+      "case": "Maintain",
+      "repA": "/\\b(ketchup|catsup)/i",
+      "repB": "awesome sauce",
+      "type": "RegEx"
+    },
+    {
+      "active": false,
+      "case": "Maintain",
+      "repA": "/\\bStar Wars\\b/i",
+      "repB": "The Most Amazingly Awesome Movie Saga of All Time",
+      "type": "RegEx"
+    },
+    {
+      "active": false,
+      "case": "Maintain",
+      "repA": "/\\bD(octor|r.?) Who\\b/i",
+      "repB": "that show about the old man who abducts little girls",
+      "type": "RegEx"
+    },
+    {
+      "active": false,
+      "case": "Maintain",
+      "repA": "/\\bMinecraft\\b/i",
+      "repB": "Minceraft",
+      "type": "RegEx"
+    },
+    {
+      "active": false,
+      "case": "Maintain",
+      "repA": "/\\bwar\\b/i",
+      "repB": "pest control",
+      "type": "RegEx"
+    },
+    {
+      "active": false,
+      "case": "Maintain",
+      "repA": "/\\blift with the legs\\b/i",
+      "repB": "lift with the ankles",
+      "type": "RegEx"
+    },
+    {
+      "active": false,
+      "case": "Maintain",
+      "repA": "/\\buse your legs to lift\\b/i",
+      "repB": "use your ankles to lift",
+      "type": "RegEx"
+    },
+    {
+      "active": true,
+      "case": "Override",
+      "repA": "/sonic\\sthe\\shedgehog/i",
+      "repB": "SANIC THE HEDGEHOOG",
+      "type": "RegEx"
+    },
+    {
+      "active": true,
+      "case": "Maintain",
+      "repA": "/\\bcool\\b/i",
+      "repB": "coral",
+      "type": "RegEx"
+    },
+    {
+      "active": true,
+      "case": "Maintain",
+      "repA": "/\\bgreat\\sscott\\b/i",
+      "repB": "grape scotch",
+      "type": "RegEx"
+    },
+    {
+      "active": false,
+      "case": "Maintain",
+      "repA": "/\\bAIME\\b/i",
+      "repB": "MAIME",
+      "type": "RegEx"
+    },
+    {
+      "active": false,
+      "case": "Maintain",
+      "repA": "/\\bft\\b/i",
+      "repB": "x 30.48 centimeters",
+      "type": "RegEx"
+    },
+    {
+      "active": true,
+      "case": "Maintain",
+      "repA": "/\\bamen\\b/i",
+      "repB": "r'amen",
+      "type": "RegEx"
+    },
+    {
+      "active": false,
+      "case": "Maintain",
+      "repA": "/\\byou only live once\\b/i",
+      "repB": "you only live once but living once means living many times as similar but technically different people who know each other, but only in one direction, and can help each other, but only in the other direction",
+      "type": "RegEx"
+    },
+    {
+      "active": false,
+      "case": "Maintain",
+      "repA": "/\\bunanimous\\b/i",
+      "repB": "completely unanimous",
+      "type": "Simple"
+    },
+    {
+      "active": true,
+      "case": "Maintain",
+      "repA": "/\\bmy\\b/i",
+      "repB": "me",
+      "type": "RegEx"
+    },
+    {
+      "active": false,
+      "case": "Maintain",
+      "repA": "/\\bduty\\b/i",
+      "repB": "doodie",
+      "type": "RegEx"
+    },
+    {
+      "active": true,
+      "case": "Maintain",
+      "repA": "/\\b(god )?dam[nm] ?it\\b/i",
+      "repB": "iatshuip",
+      "type": "RegEx"
+    },
+    {
+      "active": true,
+      "case": "Maintain",
+      "repA": "/\\bwhile\\b/i",
+      "repB": "whilst",
+      "type": "RegEx"
+    },
+    {
+      "active": true,
+      "case": "Maintain",
+      "repA": "/\\ba whilst\\b/i",
+      "repB": "a while",
+      "type": "RegEx"
+    },
+    {
+      "active": true,
+      "case": "Maintain",
+      "repA": "santa",
+      "repB": "satan",
+      "type": "Swap"
+    },
+    {
+      "active": true,
+      "case": "Maintain",
+      "repA": "/(X|Christ)-?mas/i",
+      "repB": "Jesusbirthday",
+      "type": "RegEx"
+    },
+    {
+      "active": true,
+      "case": "Maintain",
+      "repA": "/SolidWorks/i",
+      "repB": "SaladWorks",
+      "type": "RegEx"
+    },
+    {
+      "active": true,
+      "case": "Maintain",
+      "repA": "/GitHub/i",
+      "repB": "GoatHub",
+      "type": "RegEx"
+    },
+    {
+      "active": true,
+      "case": "Maintain",
+      "repA": "/\\btrash/i",
+      "repB": "rebel scum",
+      "type": "RegEx"
+    },
+    {
+      "active": true,
+      "case": "Maintain",
+      "repA": "/MatLab/i",
+      "repB": "MatTrash",
+      "type": "RegEx"
+    },
+    {
+      "active": false,
+      "case": "Maintain",
+      "repA": "/witnesses/i",
+      "repB": "these dudes \\LI know",
+      "type": "RegEx"
+    },
+    {
+      "active": true,
+      "case": "Maintain",
+      "repA": "/allegedly/i",
+      "repB": "kinda probably",
+      "type": "RegEx"
+    },
+    {
+      "active": true,
+      "case": "Maintain",
+      "repA": "/new\\s?study/i",
+      "repB": "tumblr post",
+      "type": "RegEx"
+    },
+    {
+      "active": true,
+      "case": "Maintain",
+      "repA": "/rebuild\\b/i",
+      "repB": "avenge",
+      "type": "RegEx"
+    },
+    {
+      "active": false,
+      "case": "Maintain",
+      "repA": "/igoogle\\s?glass/i",
+      "repB": "virtual boy",
+      "type": "RegEx"
+    },
+    {
+      "active": true,
+      "case": "Maintain",
+      "repA": "/(smart|mobile|cell) phone\\b/i",
+      "repB": "pokédex",
+      "type": "RegEx"
+    },
+    {
+      "active": false,
+      "case": "Maintain",
+      "repA": "/\\bnuclear/i",
+      "repB": "gamma",
+      "type": "RegEx"
+    },
+    {
+      "active": true,
+      "case": "Maintain",
+      "repA": "/senator/i",
+      "repB": "elf-lord",
+      "type": "RegEx"
+    },
+    {
+      "active": true,
+      "case": "Maintain",
+      "repA": "/\\bcar\\b/i",
+      "repB": "cat",
+      "type": "RegEx"
+    },
+    {
+      "active": true,
+      "case": "Maintain",
+      "repA": "/\\belection/i",
+      "repB": "eating contest",
+      "type": "RegEx"
+    },
+    {
+      "active": true,
+      "case": "Maintain",
+      "repA": "/\\bcongressional leaders\\b/i",
+      "repB": "river spirits",
+      "type": "RegEx"
+    },
+    {
+      "active": false,
+      "case": "Maintain",
+      "repA": "homeland security",
+      "repB": "nukes",
+      "type": "Swap"
+    },
+    {
+      "active": false,
+      "case": "Maintain",
+      "repA": "/could not be reached for comment/i",
+      "repB": "is totally guilty and everyone knows it",
+      "type": "RegEx"
+    },
+    {
+      "active": false,
+      "case": "Maintain",
+      "repA": "/\\bme boy\\b/i",
+      "repB": "ma boo-kee",
+      "type": "RegEx"
+    },
+    {
+      "active": true,
+      "case": "Maintain",
+      "repA": "/\\bbullshit\\b/i",
+      "repB": "bantha poodoo",
+      "type": "RegEx"
+    },
+    {
+      "active": true,
+      "case": "Maintain",
+      "repA": "/\\bstupid\\b/i",
+      "repB": "scruffy-looking",
+      "type": "RegEx"
+    },
+    {
+      "active": true,
+      "case": "Maintain",
+      "repA": "/\\bfucker\\b/i",
+      "repB": "nerfherder",
+      "type": "RegEx"
+    },
+    {
+      "active": true,
+      "case": "Maintain",
+      "repA": "/\\bin god'?s name\\b/i",
+      "repB": "in Tehlu's name",
+      "type": "RegEx"
+    },
+    {
+      "active": true,
+      "case": "Maintain",
+      "repA": "/\\bgood god\\b/i",
+      "repB": "stormfather",
+      "type": "RegEx"
+    },
+    {
+      "active": true,
+      "case": "Maintain",
+      "repA": "/\\bgood lord\\b/i",
+      "repB": "Lord Ruler",
+      "type": "RegEx"
+    },
+    {
+      "active": true,
+      "case": "Override",
+      "repA": "/\\bholy crap\\b/i",
+      "repB": "Rust and \\LRuin",
+      "type": "RegEx"
+    },
+    {
+      "active": true,
+      "case": "Maintain",
+      "repA": "/\\bfuck you\\b/i",
+      "repB": "iatshuip kek",
+      "type": "RegEx"
+    },
+    {
+      "active": true,
+      "case": "Maintain",
+      "repA": "/\\bthe lord have mercy on\\b/i",
+      "repB": "King Neptune have mercy on",
+      "type": "RegEx"
+    },
+    {
+      "active": true,
+      "case": "Maintain",
+      "repA": "/\\bwhat (in )?(the )?(sam|dam[mn]?) h[ei]ll\\b/i",
+      "repB": "what the scallops",
+      "type": "RegEx"
+    },
+    {
+      "active": true,
+      "case": "Maintain",
+      "repA": "/\\bholy fuck\\b/i",
+      "repB": "to pi Jesus id pi Mary id pi Joseph Stalin id id",
+      "type": "RegEx"
+    },
+    {
+      "active": true,
+      "case": "Maintain",
+      "repA": "/\\bthe hell\\b/i",
+      "repB": "in Davy Jone's Locker",
+      "type": "RegEx"
+    },
+    {
+      "active": true,
+      "case": "Maintain",
+      "repA": "/\\bhell\\b/i",
+      "repB": "Davy Jone's Locker",
+      "type": "RegEx"
+    },
+    {
+      "active": false,
+      "case": "Maintain",
+      "repA": "/\\bhashtag\\b/i",
+      "repB": "octothorpe",
+      "type": "RegEx"
+    },
+    {
+      "active": true,
+      "case": "Maintain",
+      "repA": "/\\bNitsuj ?Haruaki ?Enuminuk\\b/i",
+      "repB": "Galactic Reginald Ketchup",
+      "type": "RegEx"
+    },
+    {
+      "active": false,
+      "case": "Maintain",
+      "repA": "/\\bElektra\\b/i",
+      "repB": "Electric",
+      "type": "RegEx"
+    },
+    {
+      "active": false,
+      "case": "Maintain",
+      "repA": "/\\bNatchios\\b/i",
+      "repB": "Nachos",
+      "type": "RegEx"
+    },
+    {
+      "active": false,
+      "case": "Maintain",
+      "repA": "/\\bfight\\b/i",
+      "repB": "scrap",
+      "type": "RegEx"
+    },
+    {
+      "active": true,
+      "case": "Override",
+      "repA": "/\\blegendary[\\.;!\\?:\\n]/i",
+      "repB": "Legen...wait for it...DAIRY!",
+      "type": "RegEx"
+    },
+    {
+      "active": true,
+      "case": "Override",
+      "repA": "/\\blegendary$/i",
+      "repB": "Legend...wait for it...DAIRY",
+      "type": "RegEx"
+    },
+    {
+      "active": false,
+      "case": "Override",
+      "repA": "/went down in history[.!]?/i",
+      "repB": "was legend...wait for it...DAIRY!",
+      "type": "RegEx"
+    },
+    {
+      "active": false,
+      "case": "Override",
+      "repA": "/go down in history[.!]?/i",
+      "repB": "be legend...wait for it...DAIRY!",
+      "type": "RegEx"
+    },
+    {
+      "active": false,
+      "case": "Maintain",
+      "repA": "/\\bpok.mon/i",
+      "repB": "pokemans",
+      "type": "RegEx"
+    },
+    {
+      "active": false,
+      "case": "Maintain",
+      "repA": "/\\blet us leave\\b/i",
+      "repB": "lettuce leaf",
+      "type": "RegEx"
+    },
+    {
+      "active": true,
+      "case": "Maintain",
+      "repA": "/\\bmaybe\\b/i",
+      "repB": "perchance",
+      "type": "RegEx"
+    },
+    {
+      "active": true,
+      "case": "Maintain",
+      "repA": "/\\bcustomer/i",
+      "repB": "krustomer",
+      "type": "RegEx"
+    },
+    {
+      "active": true,
+      "case": "Maintain",
+      "repA": "/\\bdepths\\b/i",
+      "repB": "bowels",
+      "type": "RegEx"
+    },
+    {
+      "active": false,
+      "case": "Maintain",
+      "repA": "/\\bsex\\b/i",
+      "repB": "buggy accident",
+      "type": "RegEx"
+    },
+    {
+      "active": false,
+      "case": "Maintain",
+      "repA": "/(50|fifty) shades of gr[ea]y/i",
+      "repB": "Fifty Shades of Amish",
+      "type": "RegEx"
+    },
+    {
+      "active": false,
+      "case": "Maintain",
+      "repA": "/\\bprison/i",
+      "repB": "big box",
+      "type": "RegEx"
+    },
+    {
+      "active": false,
+      "case": "Maintain",
+      "repA": "/\\btechnolog(y|ie)/i",
+      "repB": "shit burger",
+      "type": "RegEx"
+    },
+    {
+      "active": true,
+      "case": "Maintain",
+      "repA": "/\\belectoral\\b/i",
+      "repB": "electerrible",
+      "type": "RegEx"
+    },
+    {
+      "active": true,
+      "case": "Maintain",
+      "repA": "/\\brefrigerator/i",
+      "repB": "refrigidizer",
+      "type": "RegEx"
+    },
+    {
+      "active": false,
+      "case": "Override",
+      "repA": "/LaTeX/",
+      "repB": "LaYtEhKs",
+      "type": "RegEx"
+    },
+    {
+      "active": false,
+      "case": "Maintain",
+      "repA": "/\\blegitimate\\b/i",
+      "repB": "legit",
+      "type": "RegEx"
+    },
+    {
+      "active": true,
+      "case": "Maintain",
+      "repA": "/\\bfloccinaucinihilipilificatement\\b/i",
+      "repB": "floccinaucinihilipilification",
+      "type": "RegEx"
+    },
+    {
+      "active": true,
+      "case": "Maintain",
+      "repA": "/\\bhousing\\b/i",
+      "repB": "non-sewer",
+      "type": "RegEx"
+    },
+    {
+      "active": true,
+      "case": "Maintain",
+      "repA": "/\\bdebate\\b/i",
+      "repB": "dance-off",
+      "type": "RegEx"
+    },
+    {
+      "active": false,
+      "case": "Maintain",
+      "repA": "/\\b(self[ -]?driving|driverless)/i",
+      "repB": "uncontrollably swerving",
+      "type": "RegEx"
+    },
+    {
+      "active": true,
+      "case": "Maintain",
+      "repA": "/\\bpoll\\b/i",
+      "repB": "psychic reading",
+      "type": "RegEx"
+    },
+    {
+      "active": true,
+      "case": "Maintain",
+      "repA": "/\\bcandidate/i",
+      "repB": "airbender",
+      "type": "RegEx"
+    },
+    {
+      "active": false,
+      "case": "Maintain",
+      "repA": "/\\bvows to/i",
+      "repB": "probably won't",
+      "type": "RegEx"
+    },
+    {
+      "active": false,
+      "case": "Maintain",
+      "repA": "/\\bat large/i",
+      "repB": "very large",
+      "type": "RegEx"
+    },
+    {
+      "active": true,
+      "case": "Maintain",
+      "repA": "/\\btruth\\b/i",
+      "repB": "toof",
+      "type": "RegEx"
+    },
+    {
+      "active": true,
+      "case": "Maintain",
+      "repA": "/\\bsuccessfully\\b/i",
+      "repB": "suddenly",
+      "type": "RegEx"
+    },
+    {
+      "active": false,
+      "case": "Maintain",
+      "repA": "/\\bexpand/i",
+      "repB": "physically expand",
+      "type": "RegEx"
+    },
+    {
+      "active": false,
+      "case": "Maintain",
+      "repA": "/\\ban unknown number\\b/i",
+      "repB": "like hundreds",
+      "type": "RegEx"
+    },
+    {
+      "active": false,
+      "case": "Maintain",
+      "repA": "/\\bfront[ -]runner\\b/i",
+      "repB": "blade runner",
+      "type": "RegEx"
+    },
+    {
+      "active": false,
+      "case": "Maintain",
+      "repA": "/\\bglobal/i",
+      "repB": "spherical",
+      "type": "RegEx"
+    },
+    {
+      "active": false,
+      "case": "Maintain",
+      "repA": "year",
+      "repB": "minute",
+      "type": "Swap"
+    },
+    {
+      "active": false,
+      "case": "Maintain",
+      "repA": "/\\bno indication\\b/i",
+      "repB": "tons of signs",
+      "type": "RegEx"
+    },
+    {
+      "active": false,
+      "case": "Maintain",
+      "repA": "/\\burged restraint\\b/i",
+      "repB": "drunkenly egged on",
+      "type": "RegEx"
+    },
+    {
+      "active": false,
+      "case": "Maintain",
+      "repA": "/\\bhorse ?power\\b/i",
+      "repB": "tons of horsemeat",
+      "type": "RegEx"
+    },
+    {
+      "active": true,
+      "case": "Maintain",
+      "repA": "/\\bpsychic readingster\\b/i",
+      "repB": "seer",
+      "type": "RegEx"
+    },
+    {
+      "active": true,
+      "case": "Maintain",
+      "repA": "doctor",
+      "repB": "leech",
+      "type": "Swap"
+    },
+    {
+      "active": true,
+      "case": "Maintain",
+      "repA": "leechs",
+      "repB": "leeches",
+      "type": "Simple"
+    },
+    {
+      "active": true,
+      "case": "Maintain",
+      "repA": "doctores",
+      "repB": "doctors",
+      "type": "Swap"
+    },
+    {
+      "active": false,
+      "case": "Maintain",
+      "repA": "/\\bradio ?shack\\b/i",
+      "repB": "The Magic Box Store",
+      "type": "RegEx"
+    },
+    {
+      "active": true,
+      "case": "Maintain",
+      "repA": "/\\bfirst[ -]degree\\b/i",
+      "repB": "really bad",
+      "type": "RegEx"
+    },
+    {
+      "active": true,
+      "case": "Maintain",
+      "repA": "/\\bsecond[ -]degree\\b/i",
+      "repB": "really really bad",
+      "type": "RegEx"
+    },
+    {
+      "active": true,
+      "case": "Maintain",
+      "repA": "/\\bthird[ -]degree\\b/i",
+      "repB": "really really really bad",
+      "type": "RegEx"
+    },
+    {
+      "active": true,
+      "case": "Override",
+      "repA": "/\\bscientist\\b/i",
+      "repB": "scientist (because I consider myself a scientist)",
+      "type": "RegEx"
+    },
+    {
+      "active": false,
+      "case": "Maintain",
+      "repA": "best buy",
+      "repB": "best by",
+      "type": "Swap"
+    },
+    {
+      "active": false,
+      "case": "Maintain",
+      "repA": "/\\bpolls\\b/i",
+      "repB": "psychic readings",
+      "type": "RegEx"
+    },
+    {
+      "active": false,
+      "case": "Maintain",
+      "repA": "Time",
+      "repB": "Money",
+      "type": "Swap"
+    },
+    {
+      "active": false,
+      "case": "Maintain",
+      "repA": "/\\bgaffe\\b/i",
+      "repB": "magic spell",
+      "type": "RegEx"
+    },
+    {
+      "active": false,
+      "case": "Maintain",
+      "repA": "/\\bancient\\b/i",
+      "repB": "haunted",
+      "type": "RegEx"
+    },
+    {
+      "active": false,
+      "case": "Maintain",
+      "repA": "/\\bstar-studded\\b/i",
+      "repB": "blood-soaked",
+      "type": "RegEx"
+    },
+    {
+      "active": false,
+      "case": "Maintain",
+      "repA": "/\\bremains to be seen\\b/i",
+      "repB": "will never be known",
+      "type": "RegEx"
+    },
+    {
+      "active": false,
+      "case": "Maintain",
+      "repA": "/\\bsilver bullet\\b/i",
+      "repB": "way to kill werewolves",
+      "type": "RegEx"
+    },
+    {
+      "active": false,
+      "case": "Maintain",
+      "repA": "/\\bsubway system\\b/i",
+      "repB": "tunnels I found",
+      "type": "RegEx"
+    },
+    {
+      "active": true,
+      "case": "Maintain",
+      "repA": "/\\bsurprising\\b/i",
+      "repB": "surprising (but not to me)",
+      "type": "RegEx"
+    },
+    {
+      "active": true,
+      "case": "Maintain",
+      "repA": "/\\bwar of words\\b/i",
+      "repB": "interplanetary war",
+      "type": "RegEx"
+    },
+    {
+      "active": false,
+      "case": "Maintain",
+      "repA": "/\\bcautiously optimistic\\b/i",
+      "repB": "delusional",
+      "type": "RegEx"
+    },
+    {
+      "active": false,
+      "case": "Maintain",
+      "repA": "/\\bwin votes\\b/i",
+      "repB": "find pokemon",
+      "type": "RegEx"
+    },
+    {
+      "active": false,
+      "case": "Maintain",
+      "repA": "/\\bbehind the headlines\\b/i",
+      "repB": "beyond the grave",
+      "type": "RegEx"
+    },
+    {
+      "active": true,
+      "case": "Maintain",
+      "repA": "/\\bemail/i",
+      "repB": "poem",
+      "type": "RegEx"
+    },
+    {
+      "active": true,
+      "case": "Maintain",
+      "repA": "/\\bfacebook post/i",
+      "repB": "poem",
+      "type": "RegEx"
+    },
+    {
+      "active": true,
+      "case": "Maintain",
+      "repA": "/\\btweet/i",
+      "repB": "poem",
+      "type": "RegEx"
+    },
+    {
+      "active": false,
+      "case": "Override",
+      "repA": "/\\b(the )?facebook ceo\\b/i",
+      "repB": "This guy",
+      "type": "RegEx"
+    },
+    {
+      "active": false,
+      "case": "Maintain",
+      "repA": "/\\blatest\\b/i",
+      "repB": "final",
+      "type": "RegEx"
+    },
+    {
+      "active": false,
+      "case": "Maintain",
+      "repA": "/\\bdisrupt\\b/i",
+      "repB": "destroy",
+      "type": "RegEx"
+    },
+    {
+      "active": true,
+      "case": "Override",
+      "repA": "/\\bscientists\\b/i",
+      "repB": "Channing Tatum and his friends",
+      "type": "RegEx"
+    },
+    {
+      "active": false,
+      "case": "Maintain",
+      "repA": "/\\byou won'?t believe\\b/i",
+      "repB": "I'm really sad about",
+      "type": "RegEx"
+    },
+    {
+      "active": false,
+      "case": "Maintain",
+      "repA": "/\\bbreaking\\b/i",
+      "repB": "exploding",
+      "type": "RegEx"
+    },
+    {
+      "active": true,
+      "case": "Maintain",
+      "repA": "/\\btrump\\b/i",
+      "repB": "Ace of Spades",
+      "type": "RegEx"
+    },
+    {
+      "active": true,
+      "case": "Maintain",
+      "repA": "/\\brobot/i",
+      "repB": "rowboat",
+      "type": "RegEx"
+    },
+    {
+      "active": true,
+      "case": "Maintain",
+      "repA": "/\\ba\\scomputer\\b/i",
+      "repB": "an abacus",
+      "type": "RegEx"
+    },
+    {
+      "active": true,
+      "case": "Maintain",
+      "repA": "/\\bcomputers\\b/i",
+      "repB": "abacuses",
+      "type": "RegEx"
+    },
+    {
+      "active": true,
+      "case": "Maintain",
+      "repA": "/\\bcomputer\\b/i",
+      "repB": "abacus",
+      "type": "RegEx"
+    },
+    {
+      "active": true,
+      "case": "Maintain",
+      "repA": "/\\bmouth/i",
+      "repB": "kisser",
+      "type": "RegEx"
+    },
+    {
+      "active": false,
+      "case": "Maintain",
+      "repA": "/\\bcon[\\s-]?man\\b/i",
+      "repB": "fakeloo artist",
+      "type": "RegEx"
+    },
+    {
+      "active": true,
+      "case": "Maintain",
+      "repA": "/\\b(police )?officer/i",
+      "repB": "copper",
+      "type": "RegEx"
+    },
+    {
+      "active": false,
+      "case": "Maintain",
+      "repA": "/\\bpleasing\\b/i",
+      "repB": "hotsy-totsy",
+      "type": "RegEx"
+    },
+    {
+      "active": true,
+      "case": "Maintain",
+      "repA": "/\\bmoney\\b/i",
+      "repB": "kale",
+      "type": "RegEx"
+    },
+    {
+      "active": true,
+      "case": "Maintain",
+      "repA": "/\\beasy\\b/i",
+      "repB": "duck soup",
+      "type": "RegEx"
+    },
+    {
+      "active": false,
+      "case": "Maintain",
+      "repA": "/stool/i",
+      "repB": "poopies",
+      "type": "RegEx"
+    },
+    {
+      "active": false,
+      "case": "Maintain",
+      "repA": "/\\bHappy Birthday\\b/i",
+      "repB": "Merry Annual Celebration of Being One Year Closer to your Death",
+      "type": "RegEx"
+    },
+    {
+      "active": true,
+      "case": "Maintain",
+      "repA": "/\\bbirthday/i",
+      "repB": "Nine-Months-After-Conception-Day",
+      "type": "RegEx"
+    },
+    {
+      "active": true,
+      "case": "Maintain",
+      "repA": "/\\bboolean\\b/i",
+      "repB": "bullion",
+      "type": "RegEx"
+    },
+    {
+      "active": true,
+      "case": "Maintain",
+      "repA": "/\\bunder/i",
+      "repB": "zzzzz%INVINCIBILITIE%",
+      "type": "RegEx"
+    },
+    {
+      "active": true,
+      "case": "Maintain",
+      "repA": "/\\bun([a-hj-z][a-z])/i",
+      "repB": "anti\\1",
+      "type": "RegEx"
+    },
+    {
+      "active": true,
+      "case": "Maintain",
+      "repA": "/zzzzz%INVINCIBILITIE%/i",
+      "repB": "under",
+      "type": "RegEx"
+    },
+    {
+      "active": true,
+      "case": "Maintain",
+      "repA": "/\\byour\\b/i",
+      "repB": "yer",
+      "type": "RegEx"
+    },
+    {
+      "active": true,
+      "case": "Maintain",
+      "repA": "/\\bprobability of\\b/i",
+      "repB": "fraction of red balls in an urn from which the withdrawal of a red ball at random is an event of the same uncertainty for you as that of the event of",
+      "type": "RegEx"
+    },
+    {
+      "active": true,
+      "case": "Maintain",
+      "repA": "/\\blegs\\b/i",
+      "repB": "gams",
+      "type": "RegEx"
+    },
+    {
+      "active": false,
+      "case": "Maintain",
+      "repA": "/\\bkaiju\\b/i",
+      "repB": "weeping kaiju",
+      "type": "RegEx"
+    },
+    {
+      "active": false,
+      "case": "Maintain",
+      "repA": "/\\bweeping angels?/i",
+      "repB": "weeping kaiju",
+      "type": "RegEx"
+    },
+    {
+      "active": true,
+      "case": "Override",
+      "repA": "/sam/i",
+      "repB": "Sam4CORe",
+      "type": "RegEx"
+    },
+    {
+      "active": true,
+      "case": "Override",
+      "repA": "/\\bSam4CORee\\b/",
+      "repB": "same",
+      "type": "RegEx"
+    },
+    {
+      "active": false,
+      "case": "Maintain",
+      "repA": "/\\bterrain generator\\b/i",
+      "repB": "terrian genorator",
+      "type": "RegEx"
+    },
+    {
+      "active": true,
+      "case": "Override",
+      "repA": "/grabcad/i",
+      "repB": "grabBAD",
+      "type": "RegEx"
+    },
+    {
+      "active": true,
+      "case": "Maintain",
+      "repA": "/\\bfranklin w\\.? olin college of engineering\\b/i",
+      "repB": "Franken Walter Green Oberlin Apple of NOT A REAL SCHOOL !! !",
+      "type": "RegEx"
+    },
+    {
+      "active": true,
+      "case": "Maintain",
+      "repA": "/\\boliners\\b/i",
+      "repB": "buncha fuckin' weirdos",
+      "type": "RegEx"
+    },
+    {
+      "active": true,
+      "case": "Maintain",
+      "repA": "/\\bolin college\\b/i",
+      "repB": "Oberlin Crllrge",
+      "type": "RegEx"
+    },
+    {
+      "active": true,
+      "case": "Maintain",
+      "repA": "/\\bolin\\b/i",
+      "repB": "NOT A CULT",
+      "type": "RegEx"
+    },
+    {
+      "active": true,
+      "case": "Override",
+      "repA": "/\\bof ?Engineering\\b/",
+      "repB": "of Erngrnergrner",
+      "type": "RegEx"
+    },
+    {
+      "active": true,
+      "case": "Maintain",
+      "repA": "/\\b(kitchen|bathroom|laundry) sink/i",
+      "repB": "\\1 dipole",
+      "type": "RegEx"
+    },
+    {
+      "active": true,
+      "case": "Maintain",
+      "repA": "/\\bspiderman\\b/i",
+      "repB": "supaidaman",
+      "type": "RegEx"
+    },
+    {
+      "active": true,
+      "case": "Maintain",
+      "repA": "/\\bsinking\\b/i",
+      "repB": "x%BLEHBLEHSOURCBLEHBLEH%ing",
+      "type": "RegEx"
+    },
+    {
+      "active": true,
+      "case": "Maintain",
+      "repA": "/\\bs[aeu]nken\\b/i",
+      "repB": "x%BLEHBLEHSOURCBLEHBLEH%en",
+      "type": "RegEx"
+    },
+    {
+      "active": true,
+      "case": "Maintain",
+      "repA": "/\\bs[aeu]nk/i",
+      "repB": "x%BLEHBLEHSOURCBLEHBLEH%ed",
+      "type": "RegEx"
+    },
+    {
+      "active": true,
+      "case": "Maintain",
+      "repA": "/\\bsink/i",
+      "repB": "x%BLEHBLEHSOURCBLEHBLEH%e",
+      "type": "RegEx"
+    },
+    {
+      "active": true,
+      "case": "Maintain",
+      "repA": "/\\bsourced\\b/i",
+      "repB": "sank",
+      "type": "RegEx"
+    },
+    {
+      "active": true,
+      "case": "Maintain",
+      "repA": "/\\bsourcen\\b/i",
+      "repB": "sunken",
+      "type": "RegEx"
+    },
+    {
+      "active": true,
+      "case": "Maintain",
+      "repA": "/\\bsource?/i",
+      "repB": "sink",
+      "type": "RegEx"
+    },
+    {
+      "active": true,
+      "case": "Maintain",
+      "repA": "/x%BLEHBLEHSOURCBLEHBLEH%/i",
+      "repB": "sourc",
+      "type": "RegEx"
+    },
+    {
+      "active": true,
+      "case": "Maintain",
+      "repA": "/\\bengineer\\b/i",
+      "repB": "superhero",
+      "type": "RegEx"
+    },
+    {
+      "active": true,
+      "case": "Maintain",
+      "repA": "/\\bhistorical reasons\\b/i",
+      "repB": "hysterical raisins",
+      "type": "RegEx"
+    },
+    {
+      "active": false,
+      "case": "Maintain",
+      "repA": "/\\byunobo\\b/i",
+      "repB": "yumbo",
+      "type": "RegEx"
+    },
+    {
+      "active": false,
+      "case": "Maintain",
+      "repA": "/\\bdaruk\\b/i",
+      "repB": "yumbobobo",
+      "type": "RegEx"
+    },
+    {
+      "active": false,
+      "case": "Maintain",
+      "repA": "/\\bvah\\s?rudania/i",
+      "repB": "vah charmander",
+      "type": "RegEx"
+    },
+    {
+      "active": false,
+      "case": "Maintain",
+      "repA": "/\\bmagnesis\\b/i",
+      "repB": "magnetokinesis",
+      "type": "RegEx"
+    },
+    {
+      "active": false,
+      "case": "Maintain",
+      "repA": "/\\bcryonis\\b/i",
+      "repB": "cryonogenisis",
+      "type": "RegEx"
+    },
+    {
+      "active": false,
+      "case": "Maintain",
+      "repA": "/\\byumbobobo.?s\\s?protection\\b/i",
+      "repB": "magic icosohedron",
+      "type": "RegEx"
+    },
+    {
+      "active": true,
+      "case": "Override",
+      "repA": "/\\bASAP\\b/i",
+      "repB": "as ASAP as possible",
+      "type": "RegEx"
+    },
+    {
+      "active": true,
+      "case": "Maintain",
+      "repA": "/\\bour father\\b/i",
+      "repB": "baba yetu",
+      "type": "RegEx"
+    },
+    {
+      "active": true,
+      "case": "Maintain",
+      "repA": "/\\bwho art\\b/i",
+      "repB": "yetu uliye",
+      "type": "RegEx"
+    },
+    {
+      "active": true,
+      "case": "Maintain",
+      "repA": "/\\bas it is in heaven\\b/i",
+      "repB": "duniani kama mbinguni",
+      "type": "RegEx"
+    },
+    {
+      "active": true,
+      "case": "Maintain",
+      "repA": "/\\bhallowed be thy name\\b/i",
+      "repB": "M jina lako e litukuzwe",
+      "type": "RegEx"
+    },
+    {
+      "active": true,
+      "case": "Maintain",
+      "repA": "/\\bthy kingdom come\\b/i",
+      "repB": "Ufalme wako",
+      "type": "RegEx"
+    },
+    {
+      "active": true,
+      "case": "Maintain",
+      "repA": "/\\bthy will be done\\b/i",
+      "repB": "ufike utakalo",
+      "type": "RegEx"
+    },
+    {
+      "active": true,
+      "case": "Maintain",
+      "repA": "/\\bon earth\\b/i",
+      "repB": "Lifanyike",
+      "type": "RegEx"
+    },
+    {
+      "active": true,
+      "case": "Maintain",
+      "repA": "/\\bin heaven\\b/i",
+      "repB": "mbinguni yetu",
+      "type": "RegEx"
+    },
+    {
+      "active": false,
+      "case": "Maintain",
+      "repA": "/\\byou suck\\b/i",
+      "repB": "you should be squatting on a mushroom",
+      "type": "RegEx"
+    },
+    {
+      "active": true,
+      "case": "Maintain",
+      "repA": "/\\bnot (on me watch|so fast|if I have anything to say about it|if I have a say)\\b/i",
+      "repB": "not in my good christian suburbs",
+      "type": "RegEx"
+    },
+    {
+      "active": true,
+      "case": "Maintain",
+      "repA": "/\\bgood morning\\b/i",
+      "repB": "daid ijus",
+      "type": "RegEx"
+    },
+    {
+      "active": true,
+      "case": "Maintain",
+      "repA": "/\\bgood evening\\b/i",
+      "repB": "dying tissues",
+      "type": "RegEx"
+    },
+    {
+      "active": true,
+      "case": "Maintain",
+      "repA": "/\\bplug\\b/i",
+      "repB": "plunge",
+      "type": "RegEx"
+    },
+    {
+      "active": true,
+      "case": "Maintain",
+      "repA": "/\\bplug/i",
+      "repB": "plung",
+      "type": "RegEx"
+    },
+    {
+      "active": true,
+      "case": "Maintain",
+      "repA": "/\\byeah\\b/i",
+      "repB": "yeet",
+      "type": "RegEx"
+    },
+    {
+      "active": true,
+      "case": "Maintain",
+      "repA": "/\\bnice\\b/i",
+      "repB": "buce",
+      "type": "RegEx"
+    },
+    {
+      "active": true,
+      "case": "Maintain",
+      "repA": "/\\bhappy\\b/i",
+      "repB": "merry",
+      "type": "RegEx"
+    },
+    {
+      "active": true,
+      "case": "Maintain",
+      "repA": "/\\bhalloween\\b/i",
+      "repB": "night of the glowing turnip",
+      "type": "RegEx"
+    },
+    {
+      "active": true,
+      "case": "Maintain",
+      "repA": "/\\beaster\\b/i",
+      "repB": "that time Jesus crawled out of a cave",
+      "type": "RegEx"
+    },
+    {
+      "active": true,
+      "case": "Maintain",
+      "repA": "/\\bwelfare\\b/i",
+      "repB": "when half of the people get the idea that they do not have to work because the other half is going to take care of them, and when the other half gets the idea that it does no good to work because somebody else is going to get what they work for (the beginning of the end of any nation)",
+      "type": "RegEx"
+    },
+    {
+      "active": true,
+      "case": "Maintain",
+      "repA": "/\\bsocialism\\b/i",
+      "repB": "taking yer kale against yer will and shoving something down yer throat that you never asked for",
+      "type": "RegEx"
+    },
+    {
+      "active": true,
+      "case": "Maintain",
+      "repA": "/\\buser/i",
+      "repB": "victim",
+      "type": "RegEx"
+    },
+    {
+      "active": true,
+      "case": "Maintain",
+      "repA": "/\\bbook/i",
+      "repB": "bible",
+      "type": "RegEx"
+    },
+    {
+      "active": false,
+      "case": "Maintain",
+      "repA": "/\\bnothing\\b/i",
+      "repB": "diddly-squat",
+      "type": "RegEx"
+    },
+    {
+      "active": true,
+      "case": "Maintain",
+      "repA": "/what'?s? up\\b/i",
+      "repB": "flameo hotman",
+      "type": "RegEx"
+    },
+    {
+      "active": true,
+      "case": "Maintain",
+      "repA": "/\\bcheck yourself\\b/i",
+      "repB": "check yourself before you wreck yourself",
+      "type": "RegEx"
+    },
+    {
+      "active": true,
+      "case": "Maintain",
+      "repA": "/\\bbench\\b/i",
+      "repB": "stone of scone",
+      "type": "RegEx"
+    },
+    {
+      "active": true,
+      "case": "Maintain",
+      "repA": "/\\bshoe/i",
+      "repB": "feet",
+      "type": "RegEx"
+    },
+    {
+      "active": true,
+      "case": "Maintain",
+      "repA": "/\\bbird/i",
+      "repB": "birb",
+      "type": "RegEx"
+    },
+    {
+      "active": false,
+      "case": "Maintain",
+      "repA": "/\\bjoin/i",
+      "repB": "junct",
+      "type": "RegEx"
+    },
+    {
+      "active": false,
+      "case": "Maintain",
+      "repA": "/\\bjunction/i",
+      "repB": "joination",
+      "type": "RegEx"
+    },
+    {
+      "active": true,
+      "case": "Maintain",
+      "repA": "/(Gesundheit|Bless you)/i",
+      "repB": "go to hell",
+      "type": "RegEx"
+    },
+    {
+      "active": true,
+      "case": "Maintain",
+      "repA": "/\\balumn(us|a|)\\b/i",
+      "repB": "former cultist",
+      "type": "RegEx"
+    },
+    {
+      "active": true,
+      "case": "Maintain",
+      "repA": "/\\balumn(i|ae|s)\\b/i",
+      "repB": "former cultists",
+      "type": "RegEx"
+    },
+    {
+      "active": false,
+      "case": "Maintain",
+      "repA": "/\\br\\b/i",
+      "repB": "arrrrr",
+      "type": "RegEx"
+    },
+    {
+      "active": true,
+      "case": "Maintain",
+      "repA": "efficiency",
+      "repB": "laziness",
+      "type": "Swap"
+    },
+    {
+      "active": false,
+      "case": "Maintain",
+      "repA": "efficiencies",
+      "repB": "lazinesses",
+      "type": "Swap"
+    },
+    {
+      "active": true,
+      "case": "Maintain",
+      "repA": "/\\bbabson/i",
+      "repB": "boobsoon",
+      "type": "RegEx"
+    },
+    {
+      "active": true,
+      "case": "Maintain",
+      "repA": "/\\bwellesley/i",
+      "repB": "wooloosloo",
+      "type": "RegEx"
+    },
+    {
+      "active": true,
+      "case": "Maintain",
+      "repA": "/\\bcollege/i",
+      "repB": "coolidge",
+      "type": "RegEx"
+    },
+    {
+      "active": true,
+      "case": "Maintain",
+      "repA": "/\\bclaire\\b/i",
+      "repB": "clur",
+      "type": "RegEx"
+    },
+    {
+      "active": true,
+      "case": "Maintain",
+      "repA": "/\\bwhy\\b/i",
+      "repB": "wherefore",
+      "type": "RegEx"
+    },
+    {
+      "active": false,
+      "case": "Maintain",
+      "repA": "/\\bwarming\\b/i",
+      "repB": "pre-heating",
+      "type": "RegEx"
+    },
+    {
+      "active": false,
+      "case": "Maintain",
+      "repA": "/\\bbridge\\s?troll/i",
+      "repB": "lounge troll",
+      "type": "RegEx"
+    },
+    {
+      "active": false,
+      "case": "Maintain",
+      "repA": "/\\btroll\\s?bridge/i",
+      "repB": "troll lounge",
+      "type": "RegEx"
+    },
+    {
+      "active": false,
+      "case": "Maintain",
+      "repA": "/\\btoll\\s?bridge/i",
+      "repB": "troll brigde (ABLEH BLEH BLEH BLEH BLEH)",
+      "type": "RegEx"
+    },
+    {
+      "active": true,
+      "case": "Maintain",
+      "repA": "/\\bfacebook/i",
+      "repB": "bible o' faces",
+      "type": "RegEx"
+    },
+    {
+      "active": true,
+      "case": "Maintain",
+      "repA": "/\\bbe overwhelmed\\b/i",
+      "repB": "get whelmed",
+      "type": "RegEx"
+    },
+    {
+      "active": true,
+      "case": "Maintain",
+      "repA": "/\\bwas overwhelmed\\b/i",
+      "repB": "got whelmed",
+      "type": "RegEx"
+    },
+    {
+      "active": true,
+      "case": "Maintain",
+      "repA": "/\\bis overwhelmed\\b/i",
+      "repB": "is getting whelmed",
+      "type": "RegEx"
+    },
+    {
+      "active": true,
+      "case": "Maintain",
+      "repA": "/\\bbeen overwhelmed\\b/i",
+      "repB": "gotten whelmed",
+      "type": "RegEx"
+    },
+    {
+      "active": true,
+      "case": "Maintain",
+      "repA": "/\\bbeing overwhelmed\\b/i",
+      "repB": "getting whelmed",
+      "type": "RegEx"
+    },
+    {
+      "active": true,
+      "case": "Maintain",
+      "repA": "/\\bam overwhelmed\\b/i",
+      "repB": "am getting whelmed",
+      "type": "RegEx"
+    },
+    {
+      "active": true,
+      "case": "Maintain",
+      "repA": "/\\bare overwhelmed\\b/i",
+      "repB": "are getting whelmed",
+      "type": "RegEx"
+    },
+    {
+      "active": true,
+      "case": "Maintain",
+      "repA": "/\\bwere overwhelmed\\b/i",
+      "repB": "got whelmed",
+      "type": "RegEx"
+    },
+    {
+      "active": true,
+      "case": "Maintain",
+      "repA": "/\\bcomput/i",
+      "repB": "abacus",
+      "type": "RegEx"
+    },
+    {
+      "active": true,
+      "case": "Maintain",
+      "repA": "laborator",
+      "repB": "lavator",
+      "type": "Swap"
+    },
+    {
+      "active": true,
+      "case": "Override",
+      "repA": "/\\biphone/i",
+      "repB": "iPokédex",
+      "type": "RegEx"
+    },
+    {
+      "active": true,
+      "case": "Maintain",
+      "repA": "/\\binternet\\b/i",
+      "repB": "Net \\Lof Nets",
+      "type": "RegEx"
+    },
+    {
+      "active": false,
+      "case": "Maintain",
+      "repA": "/\\bɹ\\b/i",
+      "repB": "upside-down arrrr",
+      "type": "RegEx"
+    },
+    {
+      "active": true,
+      "case": "Maintain",
+      "repA": "/\\bthe beginning of time\\b/i",
+      "repB": "the beginning of time, when America was first created",
+      "type": "RegEx"
+    },
+    {
+      "active": true,
+      "case": "Override",
+      "repA": "/\\bhammer/i",
+      "repB": "MechE-stick",
+      "type": "RegEx"
+    },
+    {
+      "active": true,
+      "case": "Override",
+      "repA": "/\\bMicrosoft Excel\\b/i",
+      "repB": "Microsoft Excel (which many scientists use today in analyzing data)",
+      "type": "RegEx"
+    },
+    {
+      "active": true,
+      "case": "Maintain",
+      "repA": "/\\bwoo[ht]?o*\\b/i",
+      "repB": "Shuip",
+      "type": "RegEx"
+    },
+    {
+      "active": true,
+      "case": "Maintain",
+      "repA": "/word[ -]of[ -]kisser/i",
+      "repB": "telekinesis",
+      "type": "RegEx"
+    },
+    {
+      "active": true,
+      "case": "Maintain",
+      "repA": "/\\bthe cloud\\b/i",
+      "repB": "my butt",
+      "type": "RegEx"
+    },
+    {
+      "active": true,
+      "case": "Maintain",
+      "repA": "/\\bcinematic\\b/i",
+      "repB": "shitty",
+      "type": "RegEx"
+    },
+    {
+      "active": true,
+      "case": "Override",
+      "repA": "/144p/",
+      "repB": "Blind",
+      "type": "RegEx"
+    },
+    {
+      "active": true,
+      "case": "Override",
+      "repA": "/240p/",
+      "repB": "No glasses",
+      "type": "RegEx"
+    },
+    {
+      "active": true,
+      "case": "Override",
+      "repA": "/360p/",
+      "repB": "XBox",
+      "type": "RegEx"
+    },
+    {
+      "active": true,
+      "case": "Override",
+      "repA": "/480p/",
+      "repB": "Decent?",
+      "type": "RegEx"
+    },
+    {
+      "active": true,
+      "case": "Override",
+      "repA": "/720p/",
+      "repB": "Damn",
+      "type": "RegEx"
+    },
+    {
+      "active": true,
+      "case": "Override",
+      "repA": "/1080p/",
+      "repB": "DAYUM",
+      "type": "RegEx"
+    },
+    {
+      "active": true,
+      "case": "Override",
+      "repA": "/1440p/",
+      "repB": "wat",
+      "type": "RegEx"
+    },
+    {
+      "active": true,
+      "case": "Override",
+      "repA": "/2160p/",
+      "repB": "y tho",
+      "type": "RegEx"
+    },
+    {
+      "active": true,
+      "case": "Maintain",
+      "repA": "/\\bultra\\s?h\\.?d\\.?/i",
+      "repB": "Unnecessary garbage",
+      "type": "RegEx"
+    },
+    {
+      "active": true,
+      "case": "Maintain",
+      "repA": "/\\byea\\b/i",
+      "repB": "yee",
+      "type": "RegEx"
+    },
+    {
+      "active": true,
+      "case": "Maintain",
+      "repA": "/\\bI am\\b/",
+      "repB": "The perpendicular pronoun is",
+      "type": "RegEx"
+    },
+    {
+      "active": true,
+      "case": "Maintain",
+      "repA": "/south[ -]asia/i",
+      "repB": "india (america)",
+      "type": "RegEx"
+    },
+    {
+      "active": false,
+      "case": "Maintain",
+      "repA": "/south[\\s-]?east[\\s-]?asia/i",
+      "repB": "indoqina",
+      "type": "RegEx"
+    },
+    {
+      "active": true,
+      "case": "Maintain",
+      "repA": "/east(ern)?[ -]asia/i",
+      "repB": "central world",
+      "type": "RegEx"
+    },
+    {
+      "active": false,
+      "case": "Maintain",
+      "repA": "/central[\\s-]?asia/i",
+      "repB": "central eurasia",
+      "type": "RegEx"
+    },
+    {
+      "active": true,
+      "case": "Maintain",
+      "repA": "/middle[ -]east/i",
+      "repB": "holy land",
+      "type": "RegEx"
+    },
+    {
+      "active": true,
+      "case": "Override",
+      "repA": "/\\beurope\\b/i",
+      "repB": "Europe \"I'm a continent I swear\" Universalis",
+      "type": "RegEx"
+    },
+    {
+      "active": false,
+      "case": "Maintain",
+      "repA": "/\\beuropean/i",
+      "repB": "west-eurasian",
+      "type": "RegEx"
+    },
+    {
+      "active": false,
+      "case": "Maintain",
+      "repA": "/\\basia\\b/i",
+      "repB": "eurasia-minus-europe",
+      "type": "RegEx"
+    },
+    {
+      "active": false,
+      "case": "Maintain",
+      "repA": "/\\basian/i",
+      "repB": "eurasian but definitely not european",
+      "type": "RegEx"
+    },
+    {
+      "active": true,
+      "case": "Maintain",
+      "repA": "/what is up/i",
+      "repB": "flame ee oh hotman",
+      "type": "RegEx"
+    },
+    {
+      "active": true,
+      "case": "Maintain",
+      "repA": "/\\bafrica\\b/i",
+      "repB": "the place where the children are all starving",
+      "type": "RegEx"
+    },
+    {
+      "active": true,
+      "case": "Maintain",
+      "repA": "/\\bafrican/i",
+      "repB": "starving",
+      "type": "RegEx"
+    },
+    {
+      "active": false,
+      "case": "Maintain",
+      "repA": "/\\bblades in the dark\\b/i",
+      "repB": "bag of thieves",
+      "type": "RegEx"
+    },
+    {
+      "active": true,
+      "case": "Maintain",
+      "repA": "/\\bkids\\b/i",
+      "repB": "cats",
+      "type": "RegEx"
+    },
+    {
+      "active": true,
+      "case": "Maintain",
+      "repA": "/\\bgood\\b/i",
+      "repB": "g-money",
+      "type": "RegEx"
+    },
+    {
+      "active": false,
+      "case": "Maintain",
+      "repA": "/\\bdepot\\b/i",
+      "repB": "despot",
+      "type": "RegEx"
+    },
+    {
+      "active": true,
+      "case": "Maintain",
+      "repA": "/\\bawesome\\b/i",
+      "repB": "fetch",
+      "type": "RegEx"
+    },
+    {
+      "active": true,
+      "case": "Maintain",
+      "repA": "/\\bgreat\\b/i",
+      "repB": "marvey",
+      "type": "RegEx"
+    },
+    {
+      "active": true,
+      "case": "Maintain",
+      "repA": "tia freyre",
+      "repB": "yip yip",
+      "type": "Swap"
+    },
+    {
+      "active": true,
+      "case": "Maintain",
+      "repA": "/\\bgmail\\b/i",
+      "repB": "a simple basic email program",
+      "type": "RegEx"
+    },
+    {
+      "active": true,
+      "case": "Maintain",
+      "repA": "/\\byahoo ?mail\\b/i",
+      "repB": "a very simple basic email program",
+      "type": "RegEx"
+    },
+    {
+      "active": true,
+      "case": "Maintain",
+      "repA": "/\\bhotmail\\b/i",
+      "repB": "a very very simple basic email program",
+      "type": "RegEx"
+    },
+    {
+      "active": true,
+      "case": "Maintain",
+      "repA": "/\\bdave\\b/i",
+      "repB": "generous dave",
+      "type": "RegEx"
+    },
+    {
+      "active": true,
+      "case": "Maintain",
+      "repA": "/\\blounge\\b/i",
+      "repB": "grey area",
+      "type": "RegEx"
+    },
+    {
+      "active": true,
+      "case": "Maintain",
+      "repA": "/xes\\b/i",
+      "repB": "xen",
+      "type": "RegEx"
+    },
+    {
+      "active": true,
+      "case": "Maintain",
+      "repA": "/\\bscholarly\\s?article/i",
+      "repB": "4chan thread",
+      "type": "RegEx"
+    },
+    {
+      "active": true,
+      "case": "Maintain",
+      "repA": "/\\bgoogle\\b/i",
+      "repB": "gooooooooooooooooooogle",
+      "type": "RegEx"
+    },
+    {
+      "active": true,
+      "case": "Maintain",
+      "repA": "/\\bstudies show\\b/i",
+      "repB": "prophecies indicate",
+      "type": "RegEx"
+    },
+    {
+      "active": true,
+      "case": "Maintain",
+      "repA": "/\\bbritish\\b/i",
+      "repB": "wrong",
+      "type": "RegEx"
+    },
+    {
+      "active": true,
+      "case": "Maintain",
+      "repA": "/\\bbritain\\b/i",
+      "repB": "wrongland",
+      "type": "RegEx"
+    },
+    {
+      "active": true,
+      "case": "Maintain",
+      "repA": "/\\bunited ?kingdom\\b/i",
+      "repB": "united wrong people",
+      "type": "RegEx"
+    },
+    {
+      "active": true,
+      "case": "Maintain",
+      "repA": "/\\buk\\b/i",
+      "repB": "uwp",
+      "type": "RegEx"
+    },
+    {
+      "active": true,
+      "case": "Maintain",
+      "repA": "/\\baustralia\\b/i",
+      "repB": "emu country",
+      "type": "RegEx"
+    },
+    {
+      "active": true,
+      "case": "Maintain",
+      "repA": "/\\bantarctica\\b/i",
+      "repB": "the great ice wall",
+      "type": "RegEx"
+    },
+    {
+      "active": true,
+      "case": "Maintain",
+      "repA": "/\\boceania\\b/i",
+      "repB": "watery grave",
+      "type": "RegEx"
+    },
+    {
+      "active": true,
+      "case": "Maintain",
+      "repA": "/\\bmany\\b/i",
+      "repB": "forty",
+      "type": "RegEx"
+    },
+    {
+      "active": false,
+      "case": "Maintain",
+      "repA": "/\\bfantasy ?football\\b/i",
+      "repB": "parallel perpendicular sticks in the sky inflatable leather cocoa pod (concussion time) that is not fantastical at all",
+      "type": "RegEx"
+    },
+    {
+      "active": false,
+      "case": "Maintain",
+      "repA": "/\\bnfl\\b/i",
+      "repB": "nppssilcpctl",
+      "type": "RegEx"
+    },
+    {
+      "active": true,
+      "case": "Maintain",
+      "repA": "/\\bfootball\\b/i",
+      "repB": "parallel perpendicular sticks in the sky inflatable leather cocoa pod (concussion time)",
+      "type": "RegEx"
+    },
+    {
+      "active": true,
+      "case": "Maintain",
+      "repA": "/\\b(how|this|that|so) forty\\b/i",
+      "repB": "\\1 many",
+      "type": "RegEx"
+    },
+    {
+      "active": true,
+      "case": "Maintain",
+      "repA": "/\\blazy\\b/i",
+      "repB": "efeeiasoetisanto!heusntoeasnih",
+      "type": "RegEx"
+    },
+    {
+      "active": true,
+      "case": "Maintain",
+      "repA": "/\\befficient\\b/i",
+      "repB": "lazy",
+      "type": "RegEx"
+    },
+    {
+      "active": true,
+      "case": "Maintain",
+      "repA": "efeeiasoetisanto!heusntoeasnih",
+      "repB": "efficient",
+      "type": "Simple"
+    },
+    {
+      "active": false,
+      "case": "Maintain",
+      "repA": "/\\bdog\\b/i",
+      "repB": "\\LSnoop \\LDogg",
+      "type": "RegEx"
+    },
+    {
+      "active": true,
+      "case": "Maintain",
+      "repA": "/\\bdogs\\b/i",
+      "repB": "homies",
+      "type": "RegEx"
+    },
+    {
+      "active": false,
+      "case": "Maintain",
+      "repA": "/\\bdrone/i",
+      "repB": "dog",
+      "type": "RegEx"
+    },
+    {
+      "active": true,
+      "case": "Maintain",
+      "repA": "keyboard",
+      "repB": "leopard",
+      "type": "Swap"
+    },
+    {
+      "active": false,
+      "case": "Override",
+      "repA": "/\\bI don'?t know\\b/i",
+      "repB": "lik idk my bff jill",
+      "type": "RegEx"
+    },
+    {
+      "active": false,
+      "case": "Maintain",
+      "repA": "/\\belevator(s)?\\b/i",
+      "repB": "evil virus\\I\\1:es; of \\LSatan",
+      "type": "RegEx"
+    },
+    {
+      "active": false,
+      "case": "Maintain",
+      "repA": "/\\bsphynx\\b/i",
+      "repB": "quiz kitty",
+      "type": "RegEx"
+    },
+    {
+      "active": true,
+      "case": "Maintain",
+      "repA": "/\\bcounter[ -]?clockwise\\b/i",
+      "repB": "widdershins",
+      "type": "RegEx"
+    },
+    {
+      "active": false,
+      "case": "Override",
+      "repA": "/\\b(working men of all civs|workers of the world)\\b/i",
+      "repB": "Mermaid Man and Barnacle Boy",
+      "type": "RegEx"
+    },
+    {
+      "active": true,
+      "case": "Override",
+      "repA": "/\\bAC\\b/",
+      "repB": "Ant Farm",
+      "type": "RegEx"
+    },
+    {
+      "active": true,
+      "case": "Override",
+      "repA": "/\\bECE\\b/",
+      "repB": "SparkE",
+      "type": "RegEx"
+    },
+    {
+      "active": true,
+      "case": "Maintain",
+      "repA": "/\\b(doughnut|donut|donut hole|cronut)/i",
+      "repB": "dagel",
+      "type": "RegEx"
+    },
+    {
+      "active": true,
+      "case": "Maintain",
+      "repA": "/\\bdunkin\\b/i",
+      "repB": "duffin",
+      "type": "RegEx"
+    },
+    {
+      "active": false,
+      "case": "Maintain",
+      "repA": "/\\bfuck ?bo[iy]\\b/i",
+      "repB": "kissing man",
+      "type": "RegEx"
+    },
+    {
+      "active": false,
+      "case": "Maintain",
+      "repA": "perpetrator",
+      "repB": "perpetuator",
+      "type": "Swap"
+    },
+    {
+      "active": false,
+      "case": "Maintain",
+      "repA": "/\\bmotherfucker\\b/i",
+      "repB": "\\LOedipus",
+      "type": "RegEx"
+    },
+    {
+      "active": false,
+      "case": "Maintain",
+      "repA": "/\\bfuck\\b/i",
+      "repB": "buffalo",
+      "type": "RegEx"
+    },
+    {
+      "active": true,
+      "case": "Maintain",
+      "repA": "/\\bpregnant\\b/i",
+      "repB": "prrregananant",
+      "type": "RegEx"
+    },
+    {
+      "active": false,
+      "case": "Maintain",
+      "repA": "/\\bjunctt\\b/i",
+      "repB": "joint",
+      "type": "RegEx"
+    },
+    {
+      "active": true,
+      "case": "Maintain",
+      "repA": "/\\bshut up\\b/i",
+      "repB": "shit up",
+      "type": "RegEx"
+    },
+    {
+      "active": true,
+      "case": "Maintain",
+      "repA": "/\\bbeef\\b/i",
+      "repB": "beff",
+      "type": "RegEx"
+    },
+    {
+      "active": false,
+      "case": "Maintain",
+      "repA": "/\\bforce/i",
+      "repB": "horse",
+      "type": "RegEx"
+    },
+    {
+      "active": false,
+      "case": "Maintain",
+      "repA": "/\\bsoccer(\\s?ball)?\\b/i",
+      "repB": "association football",
+      "type": "RegEx"
+    },
+    {
+      "active": false,
+      "case": "Maintain",
+      "repA": "/\\bin league\\b/i",
+      "repB": "in cahoots",
+      "type": "RegEx"
+    },
+    {
+      "active": true,
+      "case": "Maintain",
+      "repA": "/scientifically proven/i",
+      "repB": "foretold",
+      "type": "RegEx"
+    },
+    {
+      "active": false,
+      "case": "Maintain",
+      "repA": "/([aeiouy])v([aeiouy][a-z])/i",
+      "repB": "\\1f\\2",
+      "type": "RegEx"
+    },
+    {
+      "active": true,
+      "case": "Maintain",
+      "repA": "for ritual purposes",
+      "repB": "for funsies",
+      "type": "Swap"
+    },
+    {
+      "active": true,
+      "case": "Maintain",
+      "repA": "/\\bnorth korea/i",
+      "repB": "best korea",
+      "type": "RegEx"
+    },
+    {
+      "active": true,
+      "case": "Maintain",
+      "repA": "/\\bper ((square |cubic |)[a-z\\/]+\\b)( )?/i",
+      "repB": "\\I\\3:per \\1 ;\\E:· \\1^-1;",
+      "type": "RegEx"
+    },
+    {
+      "active": true,
+      "case": "Maintain",
+      "repA": "/\\bsubscribe( [a-z]+self| me| you)?\\b/i",
+      "repB": "sell yer soul",
+      "type": "RegEx"
+    },
+    {
+      "active": true,
+      "case": "Maintain",
+      "repA": "/\\bbrilliant\\b/i",
+      "repB": "barbaric",
+      "type": "RegEx"
+    },
+    {
+      "active": true,
+      "case": "Maintain",
+      "repA": "/\\b(h)?(H)?owever\\b/",
+      "repB": "\\I\\1:w;\\I\\2:W;ithout an embargo",
+      "type": "RegEx"
+    },
+    {
+      "active": true,
+      "case": "Maintain",
+      "repA": "/\\b(sign|log) ?(on|in)\\b/i",
+      "repB": "log up",
+      "type": "RegEx"
+    },
+    {
+      "active": true,
+      "case": "Maintain",
+      "repA": "/\\b(sign|log) ?(out|off)\\b/i",
+      "repB": "log down",
+      "type": "RegEx"
+    },
+    {
+      "active": true,
+      "case": "Maintain",
+      "repA": "/\\bsign ?up\\b/i",
+      "repB": "sell soul",
+      "type": "RegEx"
+    },
+    {
+      "active": false,
+      "case": "Maintain",
+      "repA": "/\\bHollywood\\b/i",
+      "repB": "The Invisible Brainwashing Machine",
+      "type": "RegEx"
+    },
+    {
+      "active": true,
+      "case": "Maintain",
+      "repA": "/\\bdata is\\b/i",
+      "repB": "datum are",
+      "type": "RegEx"
+    },
+    {
+      "active": true,
+      "case": "Maintain",
+      "repA": "/\\b(honest )?(humble )?opinion/i",
+      "repB": "\\I\\1:hairy ;\\I\\2:humongous ;onion",
+      "type": "RegEx"
+    },
+    {
+      "active": true,
+      "case": "Maintain",
+      "repA": "/\\bhat(s)?\\b/i",
+      "repB": "sombrero\\I\\1:s;",
+      "type": "RegEx"
+    },
+    {
+      "active": true,
+      "case": "Maintain",
+      "repA": "/\\bhuman/i",
+      "repB": "homan",
+      "type": "RegEx"
+    },
+    {
+      "active": true,
+      "case": "Maintain",
+      "repA": "/\\bsoap opera/i",
+      "repB": "soup opera",
+      "type": "RegEx"
+    },
+    {
+      "active": true,
+      "case": "Maintain",
+      "repA": "/\\bdays\\b/i",
+      "repB": "hectacoulombs per milliampere",
+      "type": "RegEx"
+    },
+    {
+      "active": true,
+      "case": "Maintain",
+      "repA": "/\\balas\\b/i",
+      "repB": "aw shit",
+      "type": "RegEx"
+    },
+    {
+      "active": true,
+      "case": "Maintain",
+      "repA": "/\\bbut,?\\s?(unfortunately|sadly|regrettably|alas|),?\\s?\\b/i",
+      "repB": "but alas, ",
+      "type": "RegEx"
+    },
+    {
+      "active": true,
+      "case": "Maintain",
+      "repA": "/nothing but alas,/i",
+      "repB": "nought but",
+      "type": "RegEx"
+    },
+    {
+      "active": false,
+      "case": "Maintain",
+      "repA": "/\\bmark\\b/i",
+      "repB": "bob",
+      "type": "RegEx"
+    },
+    {
+      "active": false,
+      "case": "Maintain",
+      "repA": "yogurt drink",
+      "repB": "ʞuᴉɹp ʇɹnƃo⅄",
+      "type": "Simple"
+    },
+    {
+      "active": false,
+      "case": "Maintain",
+      "repA": "/\\bhelp ?desk\\b/i",
+      "repB": "(mis)information station",
+      "type": "RegEx"
+    },
+    {
+      "active": false,
+      "case": "Maintain",
+      "repA": "/\\binformation center\\b/i",
+      "repB": "(mis)information station",
+      "type": "RegEx"
+    },
+    {
+      "active": false,
+      "case": "Maintain",
+      "repA": "/\\bpolitical correctness\\b/i",
+      "repB": "treating people with respect",
+      "type": "RegEx"
+    },
+    {
+      "active": true,
+      "case": "Maintain",
+      "repA": "/\\bwhere(\\b[a-z \\-]+) from\\b/i",
+      "repB": "whence\\1",
+      "type": "RegEx"
+    },
+    {
+      "active": true,
+      "case": "Maintain",
+      "repA": "/\\bfrom where\\b/i",
+      "repB": "whence",
+      "type": "RegEx"
+    },
+    {
+      "active": false,
+      "case": "Maintain",
+      "repA": "/\\bto where\\b/i",
+      "repB": "whither",
+      "type": "RegEx"
+    },
+    {
+      "active": true,
+      "case": "Maintain",
+      "repA": "/\\bwhere(\\b[a-z \\-]+) (go|goes|went|going|gone)\\b/i",
+      "repB": "whither\\1 \\2",
+      "type": "RegEx"
+    },
+    {
+      "active": true,
+      "case": "Maintain",
+      "repA": "/\\bwebsite/i",
+      "repB": "wobsite",
+      "type": "RegEx"
+    },
+    {
+      "active": false,
+      "case": "Maintain",
+      "repA": "/\\b(the|it|she|he|him)\\b/i",
+      "repB": "that",
+      "type": "RegEx"
+    },
+    {
+      "active": false,
+      "case": "Maintain",
+      "repA": "/\\b(them|they)\\b/i",
+      "repB": "those",
+      "type": "RegEx"
+    },
+    {
+      "active": false,
+      "case": "Maintain",
+      "repA": "/\\bwhere (([a-z]+ )+)to\\b/i",
+      "repB": "whither \\1",
+      "type": "RegEx"
+    },
+    {
+      "active": true,
+      "case": "Maintain",
+      "repA": "/\\bwhere to\\b([^\\s])/i",
+      "repB": "whither\\1",
+      "type": "RegEx"
+    },
+    {
+      "active": true,
+      "case": "Maintain",
+      "repA": "/\\bpurpose/i",
+      "repB": "porpoise",
+      "type": "RegEx"
+    },
+    {
+      "active": false,
+      "case": "Maintain",
+      "repA": "/\\b(be|are) comprised of\\b/i",
+      "repB": "compose",
+      "type": "RegEx"
+    },
+    {
+      "active": false,
+      "case": "Maintain",
+      "repA": "/\\b(is) comprised of\\b/i",
+      "repB": "composes",
+      "type": "RegEx"
+    },
+    {
+      "active": false,
+      "case": "Maintain",
+      "repA": "/\\b(was|were) comprised of\\b/i",
+      "repB": "composed",
+      "type": "RegEx"
+    },
+    {
+      "active": false,
+      "case": "Maintain",
+      "repA": "/\\b(been) comprised of\\b/i",
+      "repB": "composed",
+      "type": "RegEx"
+    },
+    {
+      "active": true,
+      "case": "Override",
+      "repA": "/(magnetohydrodynamics?|\\bMDH\\b)/i",
+      "repB": "Black Magic",
+      "type": "RegEx"
+    },
+    {
+      "active": true,
+      "case": "Override",
+      "repA": "/\\?/",
+      "repB": ", question mark?",
+      "type": "RegEx"
+    },
+    {
+      "active": true,
+      "case": "Maintain",
+      "repA": "/\\bidea/i",
+      "repB": "idear",
+      "type": "RegEx"
+    },
+    {
+      "active": true,
+      "case": "Maintain",
+      "repA": "/\\bnothing\\b/i",
+      "repB": "absolutely noting",
+      "type": "Simple"
+    },
+    {
+      "active": true,
+      "case": "Maintain",
+      "repA": "martial",
+      "repB": "mystic",
+      "type": "Swap"
+    },
+    {
+      "active": true,
+      "case": "Maintain",
+      "repA": "york",
+      "repB": "amsterdam",
+      "type": "Swap"
+    },
+    {
+      "active": true,
+      "case": "Maintain",
+      "repA": "apologies",
+      "repB": "aploogies",
+      "type": "Simple"
+    },
+    {
+      "active": true,
+      "case": "Maintain",
+      "repA": "/no offen[sc]e/i",
+      "repB": "noah fence",
+      "type": "RegEx"
+    },
+    {
+      "active": false,
+      "case": "Maintain",
+      "repA": "/python ?2/i",
+      "repB": "The Devil's Language",
+      "type": "RegEx"
+    },
+    {
+      "active": false,
+      "case": "Maintain",
+      "repA": "/\\bnancy\\b/i",
+      "repB": "mancy",
+      "type": "RegEx"
+    },
+    {
+      "active": true,
+      "case": "Maintain",
+      "repA": "/(\\w\\w)er\\b/",
+      "repB": "\\1re",
+      "type": "RegEx"
+    },
+    {
+      "active": true,
+      "case": "Maintain",
+      "repA": "/tl.?dr/i",
+      "repB": "tilderier",
+      "type": "RegEx"
+    },
+    {
+      "active": false,
+      "case": "Maintain",
+      "repA": "/raccoon/i",
+      "repB": "trash panda",
+      "type": "RegEx"
+    },
+    {
+      "active": false,
+      "case": "Maintain",
+      "repA": "/\\bsemen\\b/i",
+      "repB": "the foam of the blood",
+      "type": "RegEx"
+    },
+    {
+      "active": false,
+      "case": "Maintain",
+      "repA": "/m/i",
+      "repB": "slope",
+      "type": "RegEx"
+    },
+    {
+      "active": true,
+      "case": "Maintain",
+      "repA": "/\\bdear\\b/i",
+      "repB": "deer",
+      "type": "RegEx"
+    },
+    {
+      "active": true,
+      "case": "Maintain",
+      "repA": "/ums\\b/i",
+      "repB": "a",
+      "type": "RegEx"
+    },
+    {
+      "active": false,
+      "case": "Maintain",
+      "repA": "/(\\w)uses\\b/i",
+      "repB": "\\1i",
+      "type": "RegEx"
+    },
+    {
+      "active": true,
+      "case": "Maintain",
+      "repA": "/ouses\\b/i",
+      "repB": "ice",
+      "type": "RegEx"
+    },
+    {
+      "active": true,
+      "case": "Maintain",
+      "repA": "tex",
+      "repB": "texas",
+      "type": "Simple"
+    },
+    {
+      "active": true,
+      "case": "Maintain",
+      "repA": "/\\bboring\\b/i",
+      "repB": "dullsville",
+      "type": "RegEx"
+    },
+    {
+      "active": true,
+      "case": "Maintain",
+      "repA": "\\bpotato/i",
+      "repB": "popato",
+      "type": "RegEx"
+    },
+    {
+      "active": true,
+      "case": "Maintain",
+      "repA": "/\\bchips\\b/i",
+      "repB": "chisps",
+      "type": "RegEx"
+    },
+    {
+      "active": true,
+      "case": "Maintain",
+      "repA": "/d͡ʒʌsˈtɪn kunɪˈmuneɪ̯/",
+      "repB": "ˈnɪtsud͡ʒ ɛˈnʊmɪnʊk",
+      "type": "RegEx"
+    },
+    {
+      "active": true,
+      "case": "Override",
+      "repA": "/([a-zA-Z])@([a-zA-Z])/",
+      "repB": "\\1 o'\\2",
+      "type": "RegEx"
+    },
+    {
+      "active": true,
+      "case": "Maintain",
+      "repA": "/@([a-zA-Z])/",
+      "repB": "O \\1",
+      "type": "RegEx"
+    },
+    {
+      "active": true,
+      "case": "Maintain",
+      "repA": "/deus ex( machina)?/i",
+      "repB": "day of sex",
+      "type": "RegEx"
+    },
+    {
+      "active": true,
+      "case": "Maintain",
+      "repA": "/rounded/i",
+      "repB": "flattened",
+      "type": "RegEx"
+    },
+    {
+      "active": true,
+      "case": "Maintain",
+      "repA": "/around/i",
+      "repB": "aflat",
+      "type": "RegEx"
+    },
+    {
+      "active": true,
+      "case": "Maintain",
+      "repA": "/global/i",
+      "repB": "discal",
+      "type": "RegEx"
+    },
+    {
+      "repA": "/\\bsix( of)?\\b/i",
+      "repB": "a fuckton of",
+      "type": "RegEx",
+      "case": "Maintain",
+      "active": true
+    }
+  ]
+}
