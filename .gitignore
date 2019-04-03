@@ -1,6 +1,7 @@
-# AWS key
+# keys
 *.pem
 *.ppk
+auth.json
 
 # Logs
 logs
