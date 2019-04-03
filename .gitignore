@@ -1,3 +1,7 @@
+# AWS key
+*.pem
+*.ppk
+
 # Logs
 logs
 *.log
