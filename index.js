@@ -19,6 +19,7 @@ client.on('message', message => {
 		['cat', ['feed', 'dying', 'charger', 'hungry', 'cat']],
 		['dog', ['dog', 'cute', 'annoying', 'toby fox']],
 		['noting', ['absolutely noting', 'absolutelynoting', ':noting:']],
+		['aisunao', ['japan', 'naoshima', 'restaurant','aisunao']],
 	];
 	
 	songs.forEach(songInfo => {
