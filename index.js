@@ -8,6 +8,8 @@ client.on('ready', () => {
 });
 
 client.on('message', message => {
+	if (message.content.toLowerCase().includes('@yumbo#7066') && message.content.length < 15)
+		message.channel.send('It me.')
 	playSongs(message);
 	makeReferences(message);
 });
