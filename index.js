@@ -1,5 +1,7 @@
 const Discord = require('discord.js');
 const auth = require('./auth.json');
+const lineReader = require('line-reader');
+
 const client = new Discord.Client();
 var isReady = true;
 
@@ -8,8 +10,10 @@ client.on('ready', () => {
 });
 
 client.on('message', message => {
-	if (message.content.toLowerCase().includes('@yumbo#7066') && message.content.length < 15)
-		message.channel.send('It me.')
+	if (message.isMentioned(client.user) && message.cleanContent.length < 9) {
+		console.log('It me!');
+		message.channel.send('It me.');
+	}
 	playSongs(message);
 	makeReferences(message);
 });
@@ -28,7 +32,7 @@ function playSongs(message) {
 		['aisunao', ['japan', 'naoshima', 'restaurant','aisunao']],
 	];
 
-	content = message.content.toLowerCase();
+	var content = message.content.toLowerCase();
 	songs.forEach(songInfo => {
 		const song = songInfo[0];
 		const triggers = songInfo[1];
@@ -46,7 +50,7 @@ function playSongs(message) {
 							isReady = true;
 						});
 					}).catch(err => {
-						console.log(err)
+						console.log(err);
 						isReady = true;
 					});
 				}
@@ -55,22 +59,27 @@ function playSongs(message) {
 	});
 }
 
-function makeReferences(content) {
-	saidThing = message.content.toLowerCase();
-	saidThing = saidThing.replace('!','').replace(',','').replace('?','').replace('.','').replace('\'','').replace(' ','').replace('_','').replace('-','');
-	var reader = new FileReader();
-	reader.onload = function(progressEvent) {
-		var lines = this.result.split('\n');
-		for (var line = 0; line < lines.length; line ++) {
-			if (lines[line].length > 0) {
-				quotedThing = lines[line].toLowerCase();
-				quotedThing = quotedThing.replace('!','').replace(',','').replace('?','').replace('.','').replace('\'','').replace(' ','').replace('_','').replace('-','');
-				if (saidThing.endswith(quotedThing) && lines[line+1].length > 0)
-					message.channel.send(lines[line+1]);
+function makeReferences(message) {
+	if (message.member.user.bot)
+		return 0; // ignore things I and other bots say
+
+	var saidThing = message.content.toLowerCase().replace(/[.,;:!?-_'" ]/g, '');
+
+	var matched = false;
+	lineReader.eachLine('/home/ubuntu/meme-bot/res/scripts.txt', function(line) {
+		if (matched) {
+			if (line.length > 1)
+				message.channel.send(line);
+			matched = false;
+		}
+		if (line.length > 1) {
+			var quotedThing = line.toLowerCase().replace(/[.,;:!?-_'" ]/g, '');
+			if (saidThing == quotedThing || (quotedThing.length >= 10 && saidThing.endsWith(quotedThing))) {
+				matched = true;
+				console.log('Detected reference to "'+line+'"');
 			}
 		}
-	};
-	reader.readAsText(file);
+	});
 }
 
 client.login(auth.token);
