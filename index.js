@@ -14,11 +14,12 @@ client.on('message', message => {
 		['beans', ['bean','spill','eat','fucking insane','life is strange']],
 		['mii', ['mii','doot','yumbo','music']],
 		['iim', ['justin', 'jason', 'nosaj', 'nitsuj', 'natsuji', 'galactic ketchup']],
-		['yahaha', ['korok', 'yahaha', 'seed', 'ha']],
+		['yahaha', ['korok', 'yahaha', 'seed', 'lol']],
 		['heartbreak', ['sad', 'die', 'broken', 'determination', 'rip']],
 		['cat', ['feed', 'dying', 'charger', 'hungry', 'cat']],
 		['dog', ['dog', 'cute', 'annoying', 'toby fox']],
 		['noting', ['absolutely noting', 'absolutelynoting', ':noting:']],
+		['flowey', ['muaha', 'flowey', 'kill']],
 	];
 	
 	songs.forEach(songInfo => {
