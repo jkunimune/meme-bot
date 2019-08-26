@@ -63,9 +63,7 @@ function makeReferences(message) {
 	if (message.member.user.bot)
 		return 0; // ignore things I and other bots say
 
-	var saidThing = message.content.toLowerCase();
-	saidThing = saidThing.replace('!','').replace(',','').replace('?','').replace('.','').replace('\'','').replace(' ','').replace('_','').replace('-','');
-	console.log(saidThing);
+	var saidThing = message.content.toLowerCase().replace(/[.,;:!?-_'" ]/g, '');
 
 	var matched = false;
 	lineReader.eachLine('/home/ubuntu/meme-bot/res/scripts.txt', function(line) {
@@ -75,8 +73,7 @@ function makeReferences(message) {
 			matched = false;
 		}
 		if (line.length > 1) {
-			var quotedThing = line.toLowerCase();
-			quotedThing = quotedThing.replace('!','').replace(',','').replace('?','').replace('.','').replace('\'','').replace(' ','').replace('_','').replace('-','');
+			var quotedThing = line.toLowerCase().replace(/[.,;:!?-_'" ]/g, '');
 			if (saidThing == quotedThing || (quotedThing.length >= 10 && saidThing.endsWith(quotedThing))) {
 				matched = true;
 				console.log('Detected reference to "'+line+'"');
