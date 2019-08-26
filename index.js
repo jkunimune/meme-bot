@@ -8,8 +8,11 @@ client.on('ready', () => {
 });
 
 client.on('message', message => {
-	content = message.content.toLowerCase();
-	
+	playSongs(message);
+	makeReferences(message);
+});
+
+function playSongs(message) {
 	songs = [
 		['beans', ['bean','spill','eat','fucking insane','life is strange']],
 		['mii', ['mii','doot','yumbo','music']],
@@ -22,6 +25,7 @@ client.on('message', message => {
 		['aisunao', ['japan', 'naoshima', 'restaurant','aisunao']],
 	];
 	
+	content = message.content.toLowerCase();
 	songs.forEach(songInfo => {
 		const song = songInfo[0];
 		const triggers = songInfo[1];
@@ -46,6 +50,24 @@ client.on('message', message => {
 			}
 		});
 	});
-});
+}
+
+function makeReferences(content) {
+	saidThing = message.content.toLowerCase();
+	saidThing = saidThing.replace('!','').replace(',','').replace('?','').replace('.','').replace('\'','').replace(' ','').replace('_','').replace('-','');
+	var reader = new FileReader();
+	reader.onload = function(progressEvent) {
+		var lines = this.result.split('\n');
+		for (var line = 0; line < lines.length; line ++) {
+			if (lines[line].length > 0) {
+				quotedThing = lines[line].toLowerCase();
+				quotedThing = quotedThing.replace('!','').replace(',','').replace('?','').replace('.','').replace('\'','').replace(' ','').replace('_','').replace('-','');
+				if (saidThing.endswith(quotedThing) && lines[line+1].length > 0)
+					message.channel.send(lines[line+1]);
+			}
+		}
+	};
+	reader.readAsText(file);
+}
 
 client.login(auth.token);
