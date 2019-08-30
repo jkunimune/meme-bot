@@ -10,7 +10,7 @@ client.on('ready', () => {
 });
 
 client.on('message', message => {
-	if (message.isMentioned(client.user) && message.cleanContent.length < 9) {
+	if (message.isMentioned(client.user) && message.cleanContent.length < 15) {
 		console.log('It me!');
 		message.channel.send('It me.');
 	}
