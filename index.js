@@ -63,7 +63,7 @@ function makeReferences(message) {
 	if (message.member.user.bot)
 		return 0; // ignore things I and other bots say
 
-	var saidThing = message.content.toLowerCase().replace(/[.,;:!?-_'" ]/g, '');
+	var saidThing = message.content.toLowerCase().replace(/[.,;:!?-_'"“” ]/g, '');
 
 	var matched = false;
 	lineReader.eachLine('/home/ubuntu/meme-bot/res/scripts.txt', function(line) {
