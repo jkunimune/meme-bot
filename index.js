@@ -1,8 +1,8 @@
-const Discord = require('discord.js');
+const Discord = require('discord.js'); // imports
 const auth = require('./auth.json');
 const lineReader = require('line-reader');
 
-const client = new Discord.Client();
+const client = new Discord.Client(); // Discord client
 var isReady = true;
 
 client.on('ready', () => {
@@ -11,13 +11,16 @@ client.on('ready', () => {
 
 client.on('message', message => {
 	if (message.isMentioned(client.user) && message.cleanContent.length < 15) {
-		console.log('It me!');
+		console.log('It me!'); // respond to direct mentions with "It me!"
 		message.channel.send('It me.');
 	}
 	playSongs(message);
 	makeReferences(message);
 });
 
+/**
+ * If someone says "beans", play the beans song.
+ */
 function playSongs(message) {
 	songs = [
 		['beans', ['bean','spill','eat','fucking insane','life is strange']],
@@ -30,22 +33,22 @@ function playSongs(message) {
 		['noting', ['absolutely noting', 'absolutelynoting', ':noting:']],
 		['flowey', ['muaha', 'flowey', 'kill']],
 		['aisunao', ['japan', 'naoshima', 'restaurant','aisunao']],
-	];
+	]; // list of songs and triggers
 
 	var content = message.content.toLowerCase();
 	songs.forEach(songInfo => {
 		const song = songInfo[0];
 		const triggers = songInfo[1];
 		triggers.forEach(trigger => {
-			if (isReady && content.includes(trigger)) {
-				var voiceChannel = message.member.voiceChannel;
+			if (isReady && content.includes(trigger)) { // if someone says a trigger
+				var voiceChannel = message.member.voiceChannel; // find the voice channel on which they are
 				if (voiceChannel) {
 					isReady = false;
 					console.log('Playing '+song+'.mp3');
-					voiceChannel.join().then(connection => {
-						const dispatcher = connection.playFile('./res/'+song+'.mp3');
-						dispatcher.on('end', end => {
-							voiceChannel.leave();
+					voiceChannel.join().then(connection => { // join the that channel
+						const dispatcher = connection.playFile('./res/'+song+'.mp3'); // and play the song
+						dispatcher.on('end', end => { // when it's over
+							voiceChannel.leave(); // leave the channel
 							console.log('Done playing '+song+'.mp3');
 							isReady = true;
 						});
@@ -59,23 +62,26 @@ function playSongs(message) {
 	});
 }
 
+/**
+ * If someone says "understand", tell them how their soul will transform this world.
+ */
 function makeReferences(message) {
 	if (message.member.user.bot)
 		return 0; // ignore things I and other bots say
 
-	var saidThing = message.content.toLowerCase().replace(/[.,;:!?-_'"“” ]/g, '');
+	var saidThing = message.content.toLowerCase().replace(/[.,;:!?-_'"“” ]/g, ''); // remove punctuation
 
 	var matched = false;
-	lineReader.eachLine('/home/ubuntu/meme-bot/res/scripts.txt', function(line) {
-		if (matched) {
+	lineReader.eachLine('/home/ubuntu/meme-bot/res/scripts.txt', function(line) { // for each line of the script
+		if (matched) { // if the last line was a match
 			if (line.length > 1)
-				message.channel.send(line);
+				message.channel.send(line); // send a message with this line
 			matched = false;
 		}
 		if (line.length > 1) {
 			var quotedThing = line.toLowerCase().replace(/[.,;:!?-_'" ]/g, '');
-			if (saidThing == quotedThing || (quotedThing.length >= 10 && saidThing.endsWith(quotedThing))) {
-				matched = true;
+			if (saidThing == quotedThing || (quotedThing.length >= 10 && saidThing.endsWith(quotedThing))) { // if someone said something that matches this line
+				matched = true; // make a note so we can reply with the next line
 				console.log('Detected reference to "'+line+'"');
 			}
 		}
