@@ -16,6 +16,8 @@ client.on('message', message => {
 	}
 	playSongs(message);
 	makeReferences(message);
+	if (message.content.contains('/roll') || message.content.contains('/d20'))
+		rollADie(message);
 });
 
 /**
@@ -63,7 +65,7 @@ function playSongs(message) {
 }
 
 /**
- * If someone says "understand", tell them how their soul will transform this world.
+ * If someone says "understand", tell them about how their soul will transform this world.
  */
 function makeReferences(message) {
 	if (message.member.user.bot)
@@ -85,6 +87,18 @@ function makeReferences(message) {
 				console.log('Detected reference to "'+line+'"');
 			}
 		}
+	});
+}
+
+/**
+ * If someone says "/roll" or something of the sort, return a random number [1, 21)
+ */
+function rollADie(message) {
+	num = (int)(Math.random()*50);
+	i = 0;
+	lineReader.eachLine('/home/ubuntu/meme-bot/res/faces.txt', function(line) { // for each line of the script
+		if (i == num)
+			message.channel.send(line);
 	});
 }
 
