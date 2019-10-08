@@ -1,4 +1,5 @@
 const Discord = require('discord.js'); // imports
+const math = require('mathjs');
 const auth = require('./auth.json');
 const lineReader = require('line-reader');
 
@@ -16,7 +17,7 @@ client.on('message', message => {
 	}
 	playSongs(message);
 	makeReferences(message);
-	if (message.content.contains('/roll') || message.content.contains('/d20'))
+	if (message.content.startsWith('$roll') || message.content.startsWith('$d20'))
 		rollADie(message);
 });
 
@@ -94,11 +95,13 @@ function makeReferences(message) {
  * If someone says "/roll" or something of the sort, return a random number [1, 21)
  */
 function rollADie(message) {
-	num = (int)(Math.random()*50);
-	i = 0;
+	message.channel.send('(die rolling sound)')
+	var num = math.randomInt(50);
+	var i = 0;
 	lineReader.eachLine('/home/ubuntu/meme-bot/res/faces.txt', function(line) { // for each line of the script
 		if (i == num)
 			message.channel.send(line);
+		i ++;
 	});
 }
 
