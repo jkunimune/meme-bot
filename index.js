@@ -36,6 +36,7 @@ function playSongs(message) {
 		['noting', ['absolutely noting', 'absolutelynoting', ':noting:']],
 		['flowey', ['muaha', 'flowey', 'kill']],
 		['aisunao', ['japan', 'naoshima', 'restaurant','aisunao']],
+		['hello', ['hello', 'can you hear me', 'are you still there', 'is anyone there']],
 	]; // list of songs and triggers
 
 	var content = message.content.toLowerCase();
