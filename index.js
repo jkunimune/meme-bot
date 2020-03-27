@@ -84,7 +84,7 @@ function makeReferences(message) {
 		}
 		if (line.length > 1) {
 			var quotedThing = line.toLowerCase().replace(/[.,;:!?-_'" ]/g, '');
-			if (saidThing == quotedThing || (quotedThing.length >= 10 && saidThing.endsWith(quotedThing))) { // if someone said something that matches this line
+			if (saidThing == quotedThing || (quotedThing.length >= 7 && saidThing.endsWith(quotedThing))) { // if someone said something that matches this line
 				matched = true; // make a note so we can reply with the next line
 				console.log('Detected reference to "'+line+'"');
 			}
