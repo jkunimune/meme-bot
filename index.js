@@ -17,7 +17,7 @@ client.on('message', message => {
 	}
 	playSongs(message);
 	makeReferences(message);
-	if (message.content.startsWith('$roll') || message.content.startsWith('$d20'))
+	if (message.content.startsWith('$roll') || message.content.startsWith('$2d6'))
 		rollADie(message);
 });
 
@@ -26,10 +26,10 @@ client.on('message', message => {
  */
 function playSongs(message) {
 	songs = [
-		['beans', ['bean','spill','eat','fucking insane','life is strange']],
+		['beans', ['bean','spill','eating','fucking insane','life is strange']],
 		['mii', ['mii','doot','yumbo','music']],
 		['iim', ['justin', 'jason', 'nosaj', 'nitsuj', 'natsuji', 'galactic ketchup', 'kate']],
-		['yahaha', ['korok', 'yahaha', 'seed', 'lol', 'hahaha', 'heh']],
+		['yahaha', ['korok', 'yahaha', 'seed', 'lol', 'hahaha', 'heh', 'lift rock']],
 		['heartbreak', ['sad', 'die', 'broken', 'determination', 'rip']],
 		['cat', ['feed', 'dying', 'charger', 'hungry', 'cat']],
 		['dog', ['dog', 'cute', 'annoying', 'toby fox', 'woof']],

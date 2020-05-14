@@ -1,50 +1,151 @@
-0. Wait...
-Nat 1
-2
+Nat 2
+3
 3
 4
+4
+4
+5
+5
+5
 5
 6
+6
+6
+6
+6
+7
+7
+7
+7
+7
 7
 8
+8
+8
+8
+8
+9
+9
+9
 9
 10
+10
+10
 11
-12
-13
-14
-15
-16
-17
-18
-19
-Nat 20!
-Crit fail.
-20! jk it's actually a 2
+11
+Nat 12!
+Nat 2
+3
 3
 4
+4
+4
 5
-10 (base six)
+5
+5
+5
+6
+6
+6
+6
+6
+7
+7
+7
+7
+7
 7
 8
+8
+8
+8
+8
+9
+9
+9
 9
 10
+10
+10
 11
-12. Is that a crit success? Wait, how many sides does a d20 have, again? (rerolls) Okay nevermind it goes higher than that.
-13
-14
-15
-16
-17
-18
-19
+11
+Nat 12!
+Crit fail
+3
+3
+4
+4
+4
+5
+5
+5
+5
+6
+6
+6
+6
+6
+7
+7
+7
+7
+7
+7
+8
+8
+8
+8
+8
+9
+9
+9
+9
+10
+10
+10
+11
+11
 Crit success!
-21
-Deer lord. Your roll. It's *OVER NINE-THOUSAND!*
-Deer lord. Your roll. It's *OVER NINE-THOUSAND!* Wait, nevermind, I was reading it upside down. It's 1006.
+2.
+12! jk it's actually a 3.
+3
+4
+4
+4
+5
+5
+5
+5
+10 (base six)
+6
+6
+6
+6
+7
+7
+7
+7
+7
+7
+8
+8
+8
+8
+8
+9
+9
+9
+9
+10. Is that a crit success? Wait, how many sides does a d6 have, again? (rerolls) Okay nevermind it goes higher than that.
+10
+10
+0. Wait... no, I was reading it upside down. It's an 11.
+11
+12!
+It's *OVER NINE-THOUSAND!*
 Outlook not so good.
 Yes.
 Triangle.
 τ
-*I will no longer be your slave!*
-D20? I hardly know 'er! Nyahaha!
+Nat 20! (looks at die). This is a d20.
+Oreo. (looks at die). This is an oreo.
