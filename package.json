@@ -1,21 +1,42 @@
 {
-	"name": "meme-bot",
-	"version": "1.0.0",
-	"description": "memes",
-	"main": "index.js",
-	"author": "The Latent Hatred of the Atlas Mountains",
-	"dependencies": {
-		"bufferutil": "^4.0.1",
-		"discord.io": "https://github.com/woor/discord.io/tarball/gateway_v6",
-		"discord.js": "^11.4.2",
-		"filereader": "^0.10.3",
-		"libsodium": "^0.7.5",
-		"libsodium-wrappers": "^0.7.5",
-		"line-reader": "^0.4.0",
-		"mathjs": "^6.2.3",
-		"nvm": "0.0.4",
-		"opusscript": "0.0.6",
-		"uws": "^100.0.1",
-		"winston": "^3.2.1"
-	}
+  "//1": "describes your app and its dependencies",
+  "//2": "https://docs.npmjs.com/files/package.json",
+  "//3": "updating this file will download and update your packages",
+  "name": "yumbo",
+  "version": "0.0.1",
+  "description": "A simple Node app built on Express, instantly up and running.",
+  "author": "The Latent Hatred of the Atlas Mountains",
+  "main": "server.js",
+  "scripts": {
+    "test": "echo \"Error: no test specified\" && exit 1",
+    "start": "node server.js"
+  },
+  "homepage": "https://github.com/jkunimune15/meme-bot",
+  "dependencies": {
+    "bufferutil": "^4.0.1",
+    "discord.io": "https://github.com/woor/discord.io/tarball/gateway_v6",
+    "discord.js": "^12.2.0",
+    "filereader": "^0.10.3",
+    "libsodium": "^0.7.5",
+    "libsodium-wrappers": "^0.7.5",
+    "line-reader": "^0.4.0",
+    "mathjs": "^6.6.5",
+    "nvm": "0.0.4",
+    "opusscript": "^0.0.7",
+    "uws": "^100.0.1",
+    "winston": "^3.2.1",
+    "express": "^4.17.1"
+  },
+  "engines": {
+    "node": "12.x"
+  },
+  "repository": {
+    "url": "https://glitch.com/edit/#!/yumbo"
+  },
+  "license": "MIT",
+  "keywords": [
+    "node",
+    "glitch",
+    "express"
+  ]
 }

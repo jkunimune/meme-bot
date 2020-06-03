@@ -12,5 +12,5 @@ sudo npm install ffmpeg-binaries
 sudo npm install opusscript
 sudo npm install forever -g
 
-sudo forever (stop|restart|start) -o out.log -e err.log index.js
+sudo forever (stop|restart|start) -o out.log -e err.log server.js
 ~~~~
