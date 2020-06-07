@@ -1,16 +1,11 @@
 # Memes
 
-Pull request to suggest features. To add sound effects, throw the .mp3 into `res/` and add the trigger(s) to the list in `index.js`. Documentation for the Discord API is [here](https://discord.js.org/#/docs/main/stable/general/welcome).
+Pull request to suggest features. To add sound effects, throw the .mp3 into `res/` and add the trigger(s) to the list in `yumbo.py`. Documentation for the Discord API is [here](https://discordpy.readthedocs.io/en/latest/api.html).
 
 ~~~~
-sudo apt-get install nodejs
-sudo apt-get install npm
-sudo ln -s 'which nodejs' /usr/bin/node
+sudo apt-get install python3
+sudo apt-get install python3-pip
+sudo pip3 install discord.py dotenv
 
-sudo npm install discord.js
-sudo npm install ffmpeg-binaries
-sudo npm install opusscript
-sudo npm install forever -g
-
-sudo forever (stop|restart|start) -o out.log -e err.log server.js
+sudo python3 yumbo.py
 ~~~~
