@@ -5,10 +5,10 @@ from dotenv import load_dotenv
 import discord
 
 SONGS = {
-	'beans': ["bean", "spill", "eating", "fuckinginsane", "lifeisstrange"],
-	'mii':   ["mii", "doot", "yumbo", "music"],
-	'iim':   ["justin", "jason", "nosaj", "nitsuj", "natsuji", "galacticketchup", "kate"],
-	'yahaha':["korok", "yahaha", "seed", "lol", "hahaha", "heh", "liftrock"],
+	'beans':      ["bean", "spill", "eating", "fuckinginsane", "lifeisstrange"],
+	'mii':        ["mii", "doot", "yumbo", "music"],
+	'iim':        ["justin", "jason", "nosaj", "nitsuj", "natsuji", "galacticketchup", "kate"],
+	'yahaha':     ["korok", "yahaha", "seed", "lol", "hahaha", "heh", "liftrock"],
 	'heartbreak': ["sad", "death", "broken", "determination", "rip"],
 	'cat':        ["feed", "dying", "charger", "hungry", "cat"],
 	'dog':        ["dog", "cute", "annoying", "tobyfox", "woof"],
@@ -46,13 +46,13 @@ async def on_message(message):
 					if voice_channel is not None:
 						client.ready_to_play = False
 						print("zayo sonda {}.mp3".format(song))
-						vc = await client.join_voice_channel(voice_channel)
+						voice_client = await voice_channel.connect()
 						async def finish(*args):
 							player.stop()
-							await vc.disconnect()
+							await voice_client.disconnect()
 							client.ready_to_play = True
 							print("lewo sonda {}.mp3".format(song))
-						player = vc.create_ffmpeg_player('./res/{}.mp3'.format(song), after=finish)
+						player = voice_client.create_ffmpeg_player('./res/{}.mp3'.format(song), after=finish)
 						player.start()
 
 	with open('./res/scripts.txt', 'r') as f: # if someone says "understand", tell them about how heir soul will transform this world
