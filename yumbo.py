@@ -1,5 +1,6 @@
 import os
 import random
+import re
 from dotenv import load_dotenv
 import discord
 
@@ -20,6 +21,7 @@ SONGS = {
 load_dotenv()
 
 client = discord.Client()
+client.ready_to_play = True
 
 @client.event
 async def on_ready():
@@ -30,42 +32,46 @@ async def on_message(message):
 	if message.author == client.user: # don't respond to yourself
 		return
 
-	if client.user in message.mentions.users: # respond to direct messages
+	if client.user in message.mentions: # respond to direct messages
 		print("le me!")
-		message.channel.send("It me.")
+		await message.channel.send("It me.")
 
 	content = re.sub(r'[.,;:!?-_\'"“” ]', '', message.content.lower())
 
-	for song, triggers in SONGS.values(): # if someone says "beans", play the beans song
+	for song, triggers in SONGS.items(): # if someone says "beans", play the beans song
 		for trigger in triggers:
-			if isReady and trigger in content:
-				voiceChannel = message.member.voice.channel
-				if voiceChannel is not None:
-					isReady = False
-					print("zayo sonda {}.mp3".format(song))
-					voiceChannel.join()
-					voiceChannel.play('./res/{}.mp3'.format(song))
-					print("lewo sonda {}.mp3".format(song))
-					voiceChannel.leave()
-					isReady = True
+			if client.ready_to_play and trigger in content:
+				if message.author.voice is not None and message.author.voice.channel is not None:
+					voice_channel = message.author.voice.channel
+					if voice_channel is not None:
+						client.ready_to_play = False
+						print("zayo sonda {}.mp3".format(song))
+						vc = await client.join_voice_channel(voice_channel)
+						async def finish(*args):
+							player.stop()
+							await vc.disconnect()
+							client.ready_to_play = True
+							print("lewo sonda {}.mp3".format(song))
+						player = vc.create_ffmpeg_player('./res/{}.mp3'.format(song), after=finish)
+						player.start()
 
 	with open('./res/scripts.txt', 'r') as f: # if someone says "understand", tell them about how heir soul will transform this world
 		matched = False
 		for line in f:
 			if matched: # if the last line was a match
 				if len(line) > 1:
-					message.channel.send(line)
+					await message.channel.send(line)
 				break
 			elif len(line) > 1:
-				quote = re.sub(r'[.,;:!?-_\'"“” ]', '', line.content.lower())
-				if content == quote or (len(line) >= 7 and quote.endswith(line)):
+				quote = re.sub(r'[.,;:!?-_\'"“” ]', '', line.strip().lower())
+				if content == quote or (len(quote) >= 7 and content.endswith(quote)):
 					matched = True
-					print('sensa retrologe da "{}"'.format(line))
+					print('sensa retrologe da "{}"'.format(line.strip()))
 
 	if content == '$roll' or content == '$2d6': # if someone says "/roll" or something of the sort, return a random number [1, 37)
-		message.channel.send("(sound of rolling dies)")
+		await message.channel.send("(sound of rolling dies)")
 		with open('./res/faces.txt', 'r') as f:
 			faces = [line.strip() for line in f]
-			message.channel.send(random.choice(faces))
+			await message.channel.send(random.choice(faces))
 
 client.run(os.getenv('TOKEN'))
