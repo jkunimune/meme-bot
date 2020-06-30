@@ -100,7 +100,7 @@ Crit success!
 9
 9
 9
-10. Is that a crit success? Wait, how many sides does a d6 have, again? (rerolls) Okay nevermind it goes higher than that.
+10
 10
 10
 0. Wait... no, I was reading it upside down. It's an 11.
@@ -108,6 +108,7 @@ Crit success!
 12!
 It's *OVER NINE-THOUSAND!*
 Outlook not so good.
+Ask again later.
 Yes.
 Triangle.
 τ
