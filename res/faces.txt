@@ -186,5 +186,5 @@ Triangle.
 τ
 Nat 20! (looks at die). This is a d20.
 Oreo. (looks at die). This is an oreo.
-(you look over and see that Yumbo is in fact rolling and flailing erratically on the ground, while making a weirdly accurate impression of the sound of rolling dies with his mouth)
+(you look over and see that Yumbo is in fact rolling and flailing erratically on the ground, while making a uncannily accurate impression of the sound of rolling dies with his mouth)
 Fuck.
