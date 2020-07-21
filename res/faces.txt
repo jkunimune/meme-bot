@@ -1,3 +1,75 @@
+2
+3
+3
+4
+4
+4
+5
+5
+5
+5
+6
+6
+6
+6
+6
+7
+7
+7
+7
+7
+7
+8
+8
+8
+8
+8
+9
+9
+9
+9
+10
+10
+10
+11
+11
+12!
+2.
+3
+3
+4
+4
+4
+5
+5
+5
+5
+6
+6
+6
+6
+6
+7
+7
+7
+7
+7
+7
+8
+8
+8
+8
+8
+9
+9
+9
+9
+10
+10
+10
+11
+11
+12!
 Nat 2
 3
 3
@@ -34,7 +106,7 @@ Nat 2
 11
 11
 Nat 12!
-Crit fail
+Crit 2
 3
 3
 4
@@ -69,7 +141,7 @@ Crit fail
 10
 11
 11
-Crit success!
+Crit 12!
 2.
 12! jk it's actually a 3.
 3
@@ -104,7 +176,7 @@ Crit success!
 10
 10
 0. Wait... no, I was reading it upside down. It's an 11.
-11
+11. Wait... no, I was reading it upside down. It's an 11.
 12!
 It's *OVER NINE-THOUSAND!*
 Outlook not so good.
@@ -114,3 +186,5 @@ Triangle.
 τ
 Nat 20! (looks at die). This is a d20.
 Oreo. (looks at die). This is an oreo.
+(you look over and see that Yumbo is in fact rolling and flailing erratically on the ground, while making a uncannily accurate impression of the sound of rolling dies with his mouth)
+Fuck.
