@@ -1,3 +1,4 @@
+import asyncio
 import os
 import random
 import re
@@ -31,8 +32,8 @@ async def on_ready():
 async def on_message(message):
 	if message.author == client.user: # don't respond to yourself
 		return
-    if message.content.startsWith('!'): # and don't fight with Rhythm
-        return
+	if message.content.startswith('!'): # and don't fight with Rhythm
+		return
 
 	if client.user in message.mentions: # respond to direct messages
 		print("le me!")
@@ -49,13 +50,12 @@ async def on_message(message):
 						client.ready_to_play = False
 						print("zayo sonda {}.mp3".format(song))
 						voice_client = await voice_channel.connect()
-						async def finish(*args):
-							player.stop()
-							await voice_client.disconnect()
-							client.ready_to_play = True
-							print("lewo sonda {}.mp3".format(song))
-						player = voice_client.create_ffmpeg_player('./res/{}.mp3'.format(song), after=finish)
-						player.start()
+						voice_client.play(discord.FFmpegPCMAudio('./res/{}.mp3'.format(song)))
+						while voice_client.is_playing():
+							await asyncio.sleep(1)
+						await voice_client.disconnect()
+						print("lewo sonda {}.mp3".format(song))
+						client.ready_to_play = True
 
 	with open('./res/scripts.txt', 'r') as f: # if someone says "understand", tell them about how heir soul will transform this world
 		matched = False
