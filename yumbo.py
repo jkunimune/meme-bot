@@ -32,8 +32,8 @@ async def on_ready():
 async def on_message(message):
 	if message.author == client.user: # don't respond to yourself
 		return
-    if message.content.startsWith('!'): # and don't fight with Rhythm
-        return
+	if message.content.startswith('!'): # and don't fight with Rhythm
+		return
 
 	if client.user in message.mentions: # respond to direct messages
 		print("le me!")
