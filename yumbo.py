@@ -17,6 +17,8 @@ SONGS = {
 	'laugh':      ["muaha", "flowey", "kill"],
 	'aisunao':    ["japan", "naoshima", "restaurant", "aisunao"],
 	'hello':      ["hello", "hearme", "hearyou", "youstillthere", "anyonethere"],
+	'photograph': ["photograph", "lookatthis", "itmakesmelaugh"],
+	'objection':  ["objection", "holdit", "notsofast", "stoprightthere", "lies"]
 }
 
 load_dotenv()
