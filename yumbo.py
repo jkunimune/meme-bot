@@ -78,4 +78,7 @@ async def on_message(message):
 			faces = [line.strip() for line in f]
 			await message.channel.send(random.choice(faces))
 
+	if content == 'rip':
+		message.add_reaction('🇫')
+
 client.run(os.getenv('TOKEN'))
