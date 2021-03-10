@@ -18,7 +18,8 @@ SONGS = {
 	'aisunao':    ["japan", "naoshima", "restaurant", "aisunao"],
 	'hello':      ["hello", "hearme", "hearyou", "youstillthere", "anyonethere"],
 	'photograph': ["photograph", "lookatthis", "itmakesmelaugh"],
-	'objection':  ["objection", "holdit", "notsofast", "stoprightthere", "lies"]
+	'objection':  ["objection", "holdit", "notsofast", "stoprightthere", "lies"],
+	'why':        ["why"],
 }
 
 load_dotenv()
@@ -58,6 +59,7 @@ async def on_message(message):
 						await voice_client.disconnect()
 						print("lewo sonda {}.mp3".format(song))
 						client.ready_to_play = True
+						break
 
 	with open('./res/scripts.txt', 'r') as f: # if someone says "understand", tell them about how heir soul will transform this world
 		matched = False
