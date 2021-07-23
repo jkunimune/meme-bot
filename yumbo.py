@@ -33,7 +33,7 @@ async def on_ready():
 
 @client.event
 async def on_message(message):
-	if message.author == client.user: # don't respond to yourself
+	if message.author.bot: # don't respond to yourself or other bots
 		return
 	if message.content.startswith('!'): # and don't fight with Rhythm
 		return
