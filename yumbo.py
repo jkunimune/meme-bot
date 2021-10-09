@@ -42,7 +42,23 @@ async def on_message(message):
 		print("le me!")
 		await message.channel.send("It me.")
 
-	content = re.sub(r'[.,;:!?-_\'"“” ]', '', message.content.lower())
+	content = re.sub(r'[.,;:!?-_\'"“”]', '', message.content.lower())
+
+	words = content.split() # make combinacion puns
+	for i in range(len(words) - 1):
+		first, second = words[i], words[i+1]
+		for j in range(1, len(first) - 3):
+			if first[j:j+3] in second[:-1]:
+				await message.channel.send(f"{first[:j] + second[second.index(first[j:j+3]):]}, if you will.")
+				break
+
+	if content == '$roll' or content == '$2d6': # if someone says "/roll" or something of the sort, return a random number [1, 37)
+		await message.channel.send("(sound of rolling dies)")
+		with open('./res/faces.txt', 'r') as f:
+			faces = [line.strip() for line in f]
+			await message.channel.send(random.choice(faces))
+
+	content = re.sub(r' ', '', content)
 
 	for song, triggers in SONGS.items(): # if someone says "beans", play the beans song
 		for trigger in triggers:
@@ -61,14 +77,6 @@ async def on_message(message):
 						client.ready_to_play = True
 						break
 
-	words = content.split()
-	for i in range(len(words) - 1):
-		first, second = words[i], words[i+1]
-		for j in range(1, len(first) - 3):
-			if first[j:j+3] in second:
-				await message.channel.send(f"{first[:j] + second[second.index(first[j:j+3]):]}, if you will.")
-				break
-
 	with open('./res/scripts.txt', 'r') as f: # if someone says "understand", tell them about how heir soul will transform this world
 		matched = False
 		for line in f:
@@ -81,12 +89,6 @@ async def on_message(message):
 				if content == quote or (len(quote) >= 7 and content.endswith(quote)):
 					matched = True
 					print('sensa retrologe da "{}"'.format(line.strip()))
-
-	if content == '$roll' or content == '$2d6': # if someone says "/roll" or something of the sort, return a random number [1, 37)
-		await message.channel.send("(sound of rolling dies)")
-		with open('./res/faces.txt', 'r') as f:
-			faces = [line.strip() for line in f]
-			await message.channel.send(random.choice(faces))
 
 	if content == 'rip':
 		await message.add_reaction('🇫')
