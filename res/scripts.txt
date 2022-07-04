@@ -104,7 +104,7 @@ I won't let you snatch it away from us!
 
 Move, bitch!
 Get out the way!
-Get out the way bitch, get out the way!
+Get out the way, bitch! get out the way!
 
 Two
 phones.
@@ -344,15 +344,15 @@ Noooooooo!
 Why does he want to kick _my_ butt?
 I never said two words to the guy.
 > Hi. I'm Spongebob.
-(One, two...) Oh no. That's three!
+(One, two…) Oh no. That's three!
 
 Yahoo!
 Hall monitor SpongeBob reporting for duty, ma'am!
-I am ready to assume my position...
+I am ready to assume my position…
 in the hall!
-I will protect all that are weak...
+I will protect all that are weak…
 in the hall!
-All rules will be enforced...
+All rules will be enforced…
 in the hall!
 Classmates!
 Who am I to deserve such a great honor?
@@ -418,28 +418,28 @@ What’s the difference?
 /is this [a-z ]+$/
 No, this is Patrick.
 
-/sn(u|ea)k up on me$/
-In my own dojo.
+/sn(uc|ea)k up on me/
+In my own dōjō.
 
-/sn(u|ea)k up on us$/
-In our own dojo.
+/sn(uc|ea)k up on us/
+In our own dōjō.
 
-/sn(u|ea)k up on you$/
-In your own dojo.
+/sn(uc|ea)k up on you/
+In your own dōjō.
 
-/sn(u|ea)k up on him$/
-In his own dojo.
+/sn(uc|ea)k up on him/
+In his own dōjō.
 
-/sn(u|ea)k up on her$/
-In her own dojo.
+/sn(uc|ea)k up on her/
+In her own dōjō.
 
-/sn(u|ea)k up on them$/
-In their own dojo.
+/sn(uc|ea)k up on them/
+In their own dōjō.
 
 /used? me$/
 For land development!
 
-Are you ready to party?
+/are (you|y'?all|ye) ready to party$/
 *I'm* ready to party!
 
 /what ([a-z]+) ha(ve|s|ff) to do$/
@@ -451,8 +451,11 @@ $1 had to stop all the ghosts that were coming through.
 /([a-z]+)ier$/
 $1y ’er? I hardly know ’er!
 
-/it(s| is) all ([a-z ]+)$/
-Wait. It's all $1?
-
 /wait it(s| is) all [a-z ]+$/
 🔫 Always has been.
+
+/it(s| is) all ([a-z ]+)$/
+Wait. It's *all* $2?
+
+/thank you.*yumbo/
+Don't touch the mustash. :blep:
