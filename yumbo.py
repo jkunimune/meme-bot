@@ -80,6 +80,11 @@ async def on_message(message):
 			faces = [line.strip() for line in f]
 			await message.channel.send(random.choice(faces))
 
+	elif content == '$line': # if someone asks for a line, give them one
+		with open('./res/lines.txt', 'r') as f:
+			lines = [line.strip() for line in f]
+			await message.channel.send(random.choice(lines))
+
 	content = re.sub(r'[ .,;:!?\-_/\'"“”]', '', content)
 
 	for song, triggers in SONGS.items(): # if someone says "beans", play the beans song
