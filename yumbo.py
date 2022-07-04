@@ -27,6 +27,22 @@ load_dotenv()
 client = discord.Client()
 client.ready_to_play = True
 
+def lev_dist(first, twoth, memo={}):
+	if (first, twoth) not in memo:
+		if len(first) == 0:
+			dist = len(twoth)
+		elif len(twoth) == 0:
+			dist = len(first)
+		elif first[0] == twoth[0]:
+			dist = lev_dist(first[1:], twoth[1:])
+		else:
+			dist = 1 + min(min(
+				lev_dist(first[1:], twoth),
+				lev_dist(first, twoth[1:])),
+				lev_dist(first[1:], twoth[1:]))
+		memo[(first, twoth)] = dist
+	return memo[(first, twoth)]
+
 @client.event
 async def on_ready():
 	print("redi!")
@@ -42,15 +58,21 @@ async def on_message(message):
 		print("le me!")
 		await message.channel.send("It me.")
 
-	content = re.sub(r'[.,;:!?-_\'"“”]', '', message.content.lower())
+	content = message.content.lower()
 
 	words = content.split() # make combinacion puns
 	for i in range(len(words) - 1):
-		first, second = words[i], words[i+1]
-		for j in range(1, len(first) - 3):
-			if first[j:j+3] in second[:-1]:
-				await message.channel.send(f"{first[:j] + second[second.index(first[j:j+3]):]}, if you will.")
-				break
+		first, twoth = words[i], words[i+1]
+		if re.fullmatch(r'[a-z]+', first) and re.fullmatch(r'[a-z]+', twoth):
+			for j in range(1, len(first) - 4):
+				if first[j:j+4] in twoth[:-1]:
+					portmanto = first[:j] + twoth[twoth.index(first[j:j+4]):]
+					if lev_dist(first, portmanto) > 1 and lev_dist(twoth, portmanto) > 0:
+						print(f"epick pun detected: {first} + {twoth} = {portmanto}")
+						await message.channel.send(f"{portmanto.capitalize()}, if you will.")
+						break
+					else:
+						print(f"passing on {portmanto} because it's too close to its components")
 
 	if content == '$roll' or content == '$2d6': # if someone says "/roll" or something of the sort, return a random number [1, 37)
 		await message.channel.send("(sound of rolling dies)")
@@ -58,7 +80,7 @@ async def on_message(message):
 			faces = [line.strip() for line in f]
 			await message.channel.send(random.choice(faces))
 
-	content = re.sub(r' ', '', content)
+	content = re.sub(r'[ .,;:!?\-_/\'"“”]', '', content)
 
 	for song, triggers in SONGS.items(): # if someone says "beans", play the beans song
 		for trigger in triggers:
