@@ -100,19 +100,32 @@ async def on_message(message):
 						break
 
 	with open('./res/scripts.txt', 'r') as f: # if someone says "understand", tell them about how heir soul will transform this world
-		matched = False
-		for line in f:
+		matched, groups = False, []
+		for line in f: # look thru the scripts
+			line = line.strip()
 			if matched: # if the last line was a match
-				if len(line) > 1:
-					await message.channel.send(line)
+				if len(line) > 0:
+					for i, group in enumerate(groups): # fill in any groups from that match
+						line = line.replace(f'${i + 1}', group)
+					await message.channel.send(line) # and send this one
 				break
-			elif len(line) > 1:
-				quote = re.sub(r'[.,;:!?-_\'"“” ]', '', line.strip().lower())
-				if content == quote or (len(quote) >= 7 and content.endswith(quote)):
-					matched = True
-					print('sensa retrologe da "{}"'.format(line.strip()))
+			elif len(line) > 0:
+				bare_line = re.sub(r'[.,;:!?-_\'’"“”* ]', '', line.lower())
+				if content == bare_line or (len(bare_line) >= 7 and content.endswith(bare_line)): # if this line matches normally
+					matched = True # mark it
+					groups = []
+					print('sensa retrologe da "{}"'.format(line))
+				elif line.startswith('/') and line.endswith('/')
+					bare_line = re.sub(r'[.,;:!?-_\'’“”*]', '', line[1:-1])
+					match = re.search(bare_line, content, re.IGNORECASE) # if this line matches via regex
+					if match:
+						matched = True
+						groups = line_match.groups() # mark it and save the groops
+						print('sensa retrologe da "{}"'.format(line))
 
 	if content == 'rip':
 		await message.add_reaction('🇫')
+	if 'long long' in content or re.match(r'loo+ng', content):
+		await message.add_reaction('🎷')
 
 client.run(os.getenv('TOKEN'))

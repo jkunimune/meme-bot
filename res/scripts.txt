@@ -14,11 +14,15 @@ I was _eating those BEANS_!
 Yahaha!
 You found me!
 
-meow
-Kunimune-sama, feed your computer!
+(lifts rock)
+Yahaha!
 
 doot
 doot
+
+Hi
+do not mix
+Please the beans
 
 Rupert!
 You have to stay determined!
@@ -132,6 +136,7 @@ I ain't fuckin' with _you_!
 I got a million billion things I'd rather fuckin' do.
 Than be fuckin' with you.
 
+goddamn it yumbo
 What the fuck did you just fucking say about me, you little bitch?
 I'll have you know I graduated top of my class in the Navy Seals,
 and I've been involved in numerous secret raids on Al-Quaeda,
@@ -168,7 +173,6 @@ Mobius strip.
 Inverted, please.
 Give me that eigenvalue,
 Model rendered.
-[Tony steps back in shock]
 
 We should take Bikini Bottom,
 and push it somewhere else!
@@ -183,19 +187,23 @@ and the _children_!
 They're like animals, so I _slaughtered_ them like _animals_.
 I HATE THEM!
 
+all of them.
+Not just the men.
+
+it's over
+I have the high ground.
+
 You're stupid.
 Your mom is stupid.
 Your butt is stupid.
 Your life is stupid.
-Your _maps_ are stupid!
-*sniff* Okay. Ouch. That one was a bit far.
 
 Life before death.
 Strength before weakness.
 Journey before destination.
 I will protect those who cannot protect themselves.
 I will protect even those I hate, so long as it is right.
-Uh... something about not being able to protect some people, accepting that fact and leaving them to their fates in ordre to move on?
+I accept that there will be those I cannot protect.
 
 Baba yetu,
 yetu, uliye.
@@ -303,44 +311,148 @@ spoilers
 me?
 gongaga
 
-what I have to do
-I have to stop all the ghosts that are coming through.
+I don't need it.
+I don't need it.
+I don't need it. I don't need it.
+I definitely don't need it.
 
-what we have to do
-We have to stop all the ghosts that are coming through.
+/just [a-z]+ing there$/
+*Menacingly!*
 
-what you have to do
-You have to stop all the ghosts that are coming through.
+Technique.
+First you do this.
+Spin around. Stop!
+Double-take three times. One. Two. Three.
+Then, pelvic thrust!
+Woooooooo!
+Stop on your right foot; don't forget it!
+Now it's time to bring it around town.
+Bring it around town.
+Then you do this, and that, and this and that and this and that and then:
+AAAAAAAAAAAAAAAAAAAAAAAAAAAA!
 
-what ye have to do
-Ye have to stop all the ghosts that are coming through.
+It was his hat.
+He was number one!
 
-what she has to do
-She has to stop all the ghosts that are coming through.
+Remember.
+Licking doorknobs is illegal on other planets.
 
-what he has to do
-He has to stop all the ghosts that are coming through.
+Not even for...
+Educational television‽
+Noooooooo!
 
-what they have to do
-They have to stop all the ghosts that are coming through.
+Why does he want to kick _my_ butt?
+I never said two words to the guy.
+> Hi. I'm Spongebob.
+(One, two...) Oh no. That's three!
 
-what I had to do
-I had to stop all the ghosts that were coming through.
+Yahoo!
+Hall monitor SpongeBob reporting for duty, ma'am!
+I am ready to assume my position...
+in the hall!
+I will protect all that are weak...
+in the hall!
+All rules will be enforced...
+in the hall!
+Classmates!
+Who am I to deserve such a great honor?
+Why, I would be nothing without Mrs. Puff.
+And to my public, all I can say is, I'm touched.
+And furthermore, I will carry out my duties...
+in the hall!
 
-what we had to do
-We had to stop all the ghosts that were coming through.
+Crime and punishment.
+Punishment and crime.
+In the hall!
 
-what you had to do
-You had to stop all the ghosts that were coming through.
+Oh my gosh.
+A haunted shopping list!
+No, SpongeBob. I'm a ghost!
 
-what ye had to do
-Ye had to stop all the ghosts that were coming through.
+You took my only food.
+Now I'm gonna starve.
 
-what she had to do
-She had to stop all the ghosts that were coming through.
+Meatball meatball
+Spaghetti underneath!
+Ravioli ravioli
+Great barrier reef!
 
-what he had to do
-He had to stop all the ghosts that were coming through.
+Is mayonaise an instrument?
+No, Patrick, Mayonaise is not an instrument.
 
-what they had to do
-They had to stop all the ghosts that were coming through.
+not an instrument
+Horseradish isn't an instrument either.
+
+instrument
+Is mayonaise an instrument?
+
+keikaku
+Translator’s note: "keikaku" means "plan".
+
+keikaku-dory
+Translator’s note: "keikaku-dory" means "all according to keikaku"
+
+Firmly grasp it.
+Firmly grasp it.
+
+Wumbo.
+I wumbo.
+You wumbo.
+He she me wumbo.
+Wumbo! Wumboing!
+Wumbology, the study of Wumbo?
+It's first grade.
+
+East.
+Oh, "east". I thought you said "weast"!
+
+Weast.
+Weast‽ What kind of compass are you reading?
+This one.
+
+What am I?
+Uh, stupid?
+No, I’m Texas!
+What’s the difference?
+
+/is this [a-z ]+$/
+No, this is Patrick.
+
+/sn(u|ea)k up on me$/
+In my own dojo.
+
+/sn(u|ea)k up on us$/
+In our own dojo.
+
+/sn(u|ea)k up on you$/
+In your own dojo.
+
+/sn(u|ea)k up on him$/
+In his own dojo.
+
+/sn(u|ea)k up on her$/
+In her own dojo.
+
+/sn(u|ea)k up on them$/
+In their own dojo.
+
+/used? me$/
+For land development!
+
+Are you ready to party?
+*I'm* ready to party!
+
+/what ([a-z]+) ha(ve|s|ff) to do$/
+$1 ha$2 to stop all the ghosts that are coming through.
+
+/what ([a-z]+) had to do$/
+$1 had to stop all the ghosts that were coming through.
+
+/([a-z]+)ier$/
+$1y ’er? I hardly know ’er!
+
+/it(s| is) all ([a-z ]+)$/
+Wait. It's all $1?
+
+/wait it(s| is) all [a-z ]+$/
+🔫 Always has been.
