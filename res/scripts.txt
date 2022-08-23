@@ -102,9 +102,16 @@ For years, we've dreamed of a happy ending...
 And now, sunlight is just within our reach!
 I won't let you snatch it away from us!
 
+Holy guacamole!
+Hoppin' clams!
+Nale's nuts!
+Mother of pearl!
+Jeezum crow!
+Fucking fuck!
+
 Move, bitch!
 Get out the way!
-Get out the way, bitch! get out the way!
+Get out the way, bitch! Get out the way!
 
 Two
 phones.
@@ -198,6 +205,11 @@ Your mom is stupid.
 Your butt is stupid.
 Your life is stupid.
 
+Walnuts, peanuts
+Pineapple smells.
+Grapes, melons, oranges and
+*M O R T A L K O M B A T*
+
 Life before death.
 Strength before weakness.
 Journey before destination.
@@ -236,7 +248,7 @@ which many scientists use today in analyzing data.
 scientist
 Because I consider myself a scientist.
 
-surprising
+/\bsurprising$/
 But not to me.
 
 bana
@@ -254,9 +266,6 @@ I was eating those beans!
 
 Wowee
 , Gary Potter!
-
-Wow
-wee, Gary Potter!
 
 idk
 my bff jill
@@ -283,9 +292,6 @@ Dio!
 It was me actually
 Dio!
 
-It me.
-Dio!
-
 crap
 That's a bad word.
 
@@ -300,13 +306,16 @@ or else.
 
 Look at this photograph.
 Every time I do it makes me laugh.
-Every time I do it makes me
+Every time I do it makes me.
 
 spoiler alert
 ||Iron Man dies.||
 
 spoilers
 ||Soylent Green is people.||
+
+no spoilers
+||Murtagh is Eragon’s brother.||
 
 me?
 gongaga
@@ -387,7 +396,7 @@ instrument
 Is mayonaise an instrument?
 
 keikaku
-Translator’s note: "keikaku" means "plan".
+Translator’s note: "keikaku" means "initiative".
 
 keikaku-dory
 Translator’s note: "keikaku-dory" means "all according to keikaku"
@@ -415,7 +424,7 @@ Uh, stupid?
 No, I’m Texas!
 What’s the difference?
 
-/is this [a-z ]+$/
+/is this the [a-z ]+$/
 No, this is Patrick.
 
 /sn(uc|ea)k up on me/
@@ -457,5 +466,46 @@ $1y ’er? I hardly know ’er!
 /it(s| is) all ([a-z ]+)$/
 Wait. It's *all* $2?
 
+/how ([a-z]+) are y(ou|a|e)$/
+How $1 am I? How $1 am I‽ I ate a bowl of nails for breakfast this morning.
+
+bowl of nails for breakfast this morning
+Yeah, so?
+(narrows eyes) Without any milk.
+Right this way, sir.
+
 /thank you.*yumbo/
 Don't touch the mustash. :blep:
+
+why
+To protect the world from devastation!
+
+devastation
+To unite all people's within our nation!
+
+in our nation
+To denounce the evils of truth and love!
+
+truth and love
+To extend our reach to the stars above!
+
+stars above
+Jessie.
+James.
+Team Rocket blasts off at the speed of light!
+
+speed of light
+Surrender now or prepare to fight!
+
+prepare to fight
+Meowth, that's right!
+
+/what ha(ve|s) [a-zA-Z]+ done$/
+sweet jesus
+What have you done‽
+
+/what( is|s) [0-9,.-]+ ?[+-] ?[0-9,.-]+$/
+4
+
+/what( is|s) the square root of/
+8
