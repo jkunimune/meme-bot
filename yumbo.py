@@ -80,7 +80,8 @@ async def on_message(message):
 			for j in range(1, len(first) - PORTMANTO_BAR):
 				if first[j:j + PORTMANTO_BAR] in twoth: # and you sense a portman
 					portmanto = first[:j] + twoth[twoth.index(first[j:j + PORTMANTO_BAR]):]
-					if no_double_consonants(first[j:j + PORTMANTO_BAR]): # and there are no double letters in the shared part
+					if (len(portmanto) >= len(first) or len(portmanto) >= len(twoth)) and \
+						no_double_consonants(first[j:j + PORTMANTO_BAR]): # and there are no double letters in the shared part
 						if portmanto not in first and portmanto not in twoth and \
 								lev_dist(first, portmanto) > 1 and lev_dist(twoth, portmanto) > 0: # and it's sufficiently distant from its components
 							print(f"epick pun detected: {first} + {twoth} = {portmanto}")
@@ -124,7 +125,7 @@ async def on_message(message):
 				break
 			elif len(line) > 0:
 				if line.startswith('/') and line.endswith('/'):
-					bare_content = re.sub(r'[.,;:!?‽\-_\/\'’"“”*>]', '', content)
+					bare_content = re.sub(r'[.,;:!?‽\-_\/\'’"“”*>)(]', '', content)
 					bare_line = line[1:-1]
 					match = re.search(bare_line, bare_content, re.IGNORECASE) # if this line matches via regex
 					if match:
@@ -132,8 +133,8 @@ async def on_message(message):
 						groups = match.groups() # mark it and save the groops
 						print('sensa retrologe da "{}"'.format(line))
 				else:
-					bare_content = re.sub(r'[.,;:!?\-_\/\'’"“”*> ]', '', content.lower())
-					bare_line = re.sub(r'[.,;:!?‽\-_\/\'’"“”*> ]', '', line.lower())
+					bare_content = re.sub(r'[.,;:!?\-_\/\'’"“”*>)( ]', '', content.lower())
+					bare_line = re.sub(r'[.,;:!?‽\-_\/\'’"“”*>)( ]', '', line.lower())
 					if bare_content == bare_line or (len(bare_line) >= 7 and bare_content.endswith(bare_line)): # if this line matches normally
 						matched = True # mark it
 						groups = []
