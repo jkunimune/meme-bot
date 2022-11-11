@@ -202,14 +202,14 @@ Your life is stupid.
 Take it to the fridge.
 Walnuts, peanuts
 pineapple smells.
-Grapes, melons, oranges
-and *M O R T A L   K O M B A T*
-
-Grapes, oranges, melons
-and *M O R T A L   K O M B A T*
-
 Grapes, melons, oranges, and
 *M O R T A L   K O M B A T*
+
+Grapes, oranges, melons, and
+*M O R T A L   K O M B A T*
+
+Grapes, melons, oranges
+and *M O R T A L   K O M B A T*
 
 Here we go!
 So they're finally here
@@ -218,11 +218,23 @@ If you know the words,
 you can join in, too.
 Put your hands together
 if you want to clap.
+As we take you through this
+
+if you wanna clap.
+As we take you through this
+this *M O R T A L   K O M B A T*!
+
 As we take you through
 this *M O R T A L   K O M B A T*!
 
-As we take you through this
-*M O R T A L   K O M B A T*!
+/mortal ko(m|ng)bat$/
+D! K!
+Donkey Kong!
+D! K!
+Donkey Kong is here, huh!
+
+Donkey Kong is here!
+D! K!
 
 Life before death.
 Strength before weakness.
@@ -345,9 +357,12 @@ I definitely don't need it.
 Technique.
 First you do this.
 Spin around. Stop!
-Double-take three times. One. Two. Three.
+Double-take three times.
+One. Two. Three.
 Then, pelvic thrust!
-Woooooooo!
+Woooooooo! Woooooooo!
+
+/woo+ woo+$/
 Stop on your right foot; don't forget it!
 Now it's time to bring it around town.
 Bring it around town.
@@ -364,10 +379,21 @@ Not even for...
 Educational television‽
 Noooooooo!
 
+Buns and thighs.
+Ja. Buns and thighs.
+
+/im go(nna|ing to) kick your butt$/
 Why does he want to kick _my_ butt?
 I never said two words to the guy.
 > Hi. I'm Spongebob.
 (One, two…) Oh no. That's three!
+
+Ho ho ho.
+Stop it; you're scaring him!
+
+mystery
+Wheeze-naw!
+Well, keep working on it! That was terrible!
 
 Yahoo!
 Hall monitor SpongeBob reporting for duty, ma'am!
@@ -379,7 +405,9 @@ All rules will be enforced…
 in the hall!
 Classmates!
 Who am I to deserve such a great honor?
-Why, I would be nothing without Mrs. Puff.
+
+/whom? am i to deserve such a great honor$/
+Why, I would be *nothing* without Mrs. Puff.
 And to my public, all I can say is, I'm touched.
 And furthermore, I will carry out my duties...
 in the hall!
@@ -462,7 +490,7 @@ In their own dōjō.
 /used? me$/
 For land development!
 
-/are (you|y'?all|ye) ready to party$/
+/are (you|yall|ye) ready to party$/
 *I'm* ready to party!
 
 /what ([a-z]+) ha(ve|s|ff) to do$/
@@ -490,7 +518,7 @@ Yeah, so?
 Without any milk.
 Right this way, sir.
 
-/thank you.*yumbo/
+/thank( you|s).*yumbo/
 Don't touch the mustash. :blep:
 
 why
@@ -516,8 +544,8 @@ Surrender now or prepare to fight!
 prepare to fight
 Meowth, that's right!
 
-/what ha(ve|s) [a-zA-Z]+ done$/
-sweet jesus
+/what ha(ve|s) [a-z]+ done$/
+sweet jesus.
 What have you done‽
 
 /what( is|s) [0-9,.-]+ ?[+-] ?[0-9,.-]+$/

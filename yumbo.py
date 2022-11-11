@@ -88,10 +88,6 @@ async def on_message(message):
 							if random.random() < 1/3:
 								await message.channel.send(f"{portmanto.capitalize()}, if you will.")
 							break
-						else:
-							print(f"passing on {first} + {twoth} = {portmanto} because it's too close to its components")
-					else:
-						print(f"passing on {first} + {twoth} = {portmanto} because it doesn't *feel* like they share {PORTMANTO_BAR} zi")
 
 	if content == '$roll' or content == '$2d6': # if someone says "/roll" or something of the sort, return a random number [1, 37)
 		await message.channel.send("(sound of rolling dies)")
@@ -116,6 +112,7 @@ async def on_message(message):
 			line = line.strip()
 			if matched: # if the last line was a match
 				if len(line) > 0:
+					print('sensa retrologe da "{}"'.format(line))
 					for i, group in enumerate(groups): # fill in any groups from that match
 						line = line.replace(f'${i + 1}', group)
 					try:
@@ -131,7 +128,6 @@ async def on_message(message):
 					if match:
 						matched = True
 						groups = match.groups() # mark it and save the groops
-						print('sensa retrologe da "{}"'.format(line))
 				else:
 					bare_content = re.sub(r'[.,;:!?\-_\/\'’"“”*>)( ]', '', content.lower())
 					bare_line = re.sub(r'[.,;:!?‽\-_\/\'’"“”*>)( ]', '', line.lower())
