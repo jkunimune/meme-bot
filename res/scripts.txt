@@ -68,6 +68,8 @@ Seven human souls, and King ASGORE will become a god.
 Six.
 That's how many we have collected thus far.
 Understand?
+
+/^understand$/
 Through your seventh and final soul, this world will be transformed.
 First, however, as is customary for those who make it this far...
 I shall tell you the tragic tale of our people.
@@ -547,6 +549,9 @@ Meowth, that's right!
 /what ha(ve|s) [a-z]+ done$/
 sweet jesus.
 What have you done‽
+
+/check y(our?|er|a)([a-z ]+)$/
+before you wreck y$1$2
 
 /what( is|s) [0-9,.-]+ ?[+-] ?[0-9,.-]+$/
 4
