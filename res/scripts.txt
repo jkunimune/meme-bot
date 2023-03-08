@@ -339,11 +339,11 @@ Every time I do it makes me.
 spoiler alert
 ||Iron Man dies.||
 
-spoilers
-||Soylent Green is people.||
-
 no spoilers
 ||Murtagh is Eragon’s brother.||
+
+spoilers
+||Soylent Green is people.||
 
 me?
 gongaga
@@ -558,3 +558,7 @@ before you wreck y$1$2
 
 /what( is|s) the square root of/
 8
+
+mosquito bites
+お前はもう死んでいる。
+Nani‽

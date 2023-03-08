@@ -106,19 +106,20 @@ async def on_message(message):
 			client.blacklist = client.blacklist[1:]
 		await message.channel.send(f"||{choice}||")
 
-	with open('./res/scripts.txt', 'r') as f: # if someone says "understand", tell them about how heir soul will transform this world
+	with open('./res/scripts.txt', 'r') as f: # if someone says "understand", tell them about how their soul will transform this world
 		matched, groups = False, []
 		for line in f: # look thru the scripts
 			line = line.strip()
 			if matched: # if the last line was a match
 				if len(line) > 0:
 					print('sensa retrologe da "{}"'.format(line))
-					for i, group in enumerate(groups): # fill in any groups from that match
-						line = line.replace(f'${i + 1}', group)
-					try:
-						await message.channel.send(line) # and send this one
-					except AttributeError:
-						print("oh sad, I can't send messages to voice channel text channels.")
+					if random.random() < 1/3:
+						for i, group in enumerate(groups): # fill in any groups from that match
+							line = line.replace(f'${i + 1}', group)
+						try:
+							await message.channel.send(line) # and send this one
+						except AttributeError:
+							print("oh sad, I can't send messages to voice channel text channels.")
 				break
 			elif len(line) > 0:
 				if line.startswith('/') and line.endswith('/'):
@@ -134,7 +135,6 @@ async def on_message(message):
 					if bare_content == bare_line or (len(bare_line) >= 7 and bare_content.endswith(bare_line)): # if this line matches normally
 						matched = True # mark it
 						groups = []
-						print('sensa retrologe da "{}"'.format(line))
 
 	for key, reaction in REACTIONS.items():
 		if re.search(key, content, re.IGNORECASE):
