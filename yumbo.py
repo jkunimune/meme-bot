@@ -64,14 +64,13 @@ async def on_ready():
 async def on_message(message):
 	if message.author.bot: # don't respond to yourself or other bots
 		return
-	if message.content.startswith('!'): # and don't fight with Rhythm
-		return
-
-	if client.user in message.mentions: # respond to direct messages
-		print("go ga mi!")
-		await message.channel.send("It me.")
 
 	content = message.content
+	important = False
+
+	if client.user in message.mentions: # always respond to direct messages
+		important = True
+		content = re.sub(r"<@[0-9]+>", "", content).strip()
 
 	words = content.lower().split() # make combinacion puns
 	for i in range(max(0, len(words) - 16), len(words) - 1): # if it's near the end of the message
@@ -85,15 +84,16 @@ async def on_message(message):
 						if portmanto not in first and portmanto not in twoth and \
 								lev_dist(first, portmanto) > 1 and lev_dist(twoth, portmanto) > 0: # and it's sufficiently distant from its components
 							print(f"epick pun detected: {first} + {twoth} = {portmanto}")
-							if random.random() < 1/3:
+							if important or random.random() < 1/3:
 								await message.channel.send(f"{portmanto.capitalize()}, if you will.")
-							break
+							return
 
 	if content == '$roll' or content == '$2d6': # if someone says "/roll" or something of the sort, return a random number [1, 37)
 		await message.channel.send("(sound of rolling dies)")
 		with open('./res/faces.txt', 'r') as f:
 			faces = [line.strip() for line in f]
 		await message.channel.send(random.choice(faces))
+		return
 
 	elif content == '$line': # if someone asks for a line, give them one
 		with open('./res/lines.txt', 'r') as f:
@@ -105,6 +105,7 @@ async def on_message(message):
 		if len(client.blacklist) > 18:
 			client.blacklist = client.blacklist[1:]
 		await message.channel.send(f"||{choice}||")
+		return
 
 	with open('./res/scripts.txt', 'r') as f: # if someone says "understand", tell them about how their soul will transform this world
 		matched, groups = False, []
@@ -113,14 +114,14 @@ async def on_message(message):
 			if matched: # if the last line was a match
 				if len(line) > 0:
 					print('sensa retrologe da "{}"'.format(line))
-					if random.random() < 1/3:
+					if important or random.random() < 1/3:
 						for i, group in enumerate(groups): # fill in any groups from that match
 							line = line.replace(f'${i + 1}', group)
 						try:
 							await message.channel.send(line) # and send this one
 						except AttributeError:
 							print("oh sad, I can't send messages to voice channel text channels.")
-				break
+				return
 			elif len(line) > 0:
 				if line.startswith('/') and line.endswith('/'):
 					bare_content = re.sub(r'[.,;:!?‽\-_\/\'’"“”*>)(]', '', content)
@@ -139,6 +140,7 @@ async def on_message(message):
 	for key, reaction in REACTIONS.items():
 		if re.search(key, content, re.IGNORECASE):
 			await message.add_reaction(reaction)
+			return
 
 	for song, triggers in SONGS.items(): # if someone says "beans", play the beans song
 		for trigger in triggers:
@@ -147,7 +149,6 @@ async def on_message(message):
 					voice_channel = message.author.voice.channel
 					if voice_channel is not None:
 						client.ready_to_play = False
-						print("zayo sonda {}.mp3".format(song))
 						voice_client = await voice_channel.connect()
 						voice_client.play(discord.FFmpegPCMAudio('./res/{}.mp3'.format(song)))
 						while voice_client.is_playing():
@@ -155,6 +156,12 @@ async def on_message(message):
 						await voice_client.disconnect()
 						print("lewo sonda {}.mp3".format(song))
 						client.ready_to_play = True
-						break
+						return
+
+	# if you were atted but have yet to find an adequate response, default to this
+	if important:
+		print("it me!")
+		await message.channel.send("go ga mi!")
+		return
 
 client.run(os.getenv('TOKEN'))

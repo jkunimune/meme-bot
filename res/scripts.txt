@@ -221,13 +221,13 @@ you can join in, too.
 Put your hands together
 if you want to clap.
 As we take you through this
+*M O R T A L   K O M B A T!*
 
 if you wanna clap.
 As we take you through this
-this *M O R T A L   K O M B A T*!
 
 As we take you through
-this *M O R T A L   K O M B A T*!
+this *M O R T A L   K O M B A T!*
 
 /mortal ko(m|ng)bat$/
 D! K!
@@ -286,7 +286,7 @@ Why have you done this to me?
 No, this is not the key.
 Oh, what does all of this mean?
 Mmm, I was eating those beans.
-Oh, I was eating those bean.
+Oh, I was eating those beans.
 I was eating those beans, ooohhh!
 Oh, are you fucking insane?
 I was eating those beans, I was eating those beans!
@@ -374,7 +374,7 @@ AAAAAAAAAAAAAAAAAAAAAAAAAAAA!
 It was his hat.
 He was number one!
 
-Remember.
+/^remember$/
 Licking doorknobs is illegal on other planets.
 
 Not even for...
@@ -395,7 +395,7 @@ Stop it; you're scaring him!
 
 mystery
 Wheeze-naw!
-Well, keep working on it! That was terrible!
+Well, keep working on it! That was terrible.
 
 Yahoo!
 Hall monitor SpongeBob reporting for duty, ma'am!
