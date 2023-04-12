@@ -31,24 +31,25 @@ REACTIONS = {
 load_dotenv()
 
 client = discord.Client()
+client.last_thing_I_was_about_to_say = None
 client.ready_to_play = True
 client.blacklist = []
 
-def lev_dist(first, twoth, memo={}):
-	if (first, twoth) not in memo:
+def lev_dist(first: str, twoth: str, cache: dict):
+	if (first, twoth) not in cache:
 		if len(first) == 0:
 			dist = len(twoth)
 		elif len(twoth) == 0:
 			dist = len(first)
 		elif first[0] == twoth[0]:
-			dist = lev_dist(first[1:], twoth[1:])
+			dist = lev_dist(first[1:], twoth[1:], cache)
 		else:
 			dist = 1 + min(min(
-				lev_dist(first[1:], twoth),
-				lev_dist(first, twoth[1:])),
-				lev_dist(first[1:], twoth[1:]))
-		memo[(first, twoth)] = dist
-	return memo[(first, twoth)]
+				lev_dist(first[1:], twoth, cache),
+				lev_dist(first, twoth[1:], cache)),
+				lev_dist(first[1:], twoth[1:], cache))
+		cache[(first, twoth)] = dist
+	return cache[(first, twoth)]
 
 def no_double_consonants(s):
 	for k in range(0, len(s) - 1):
@@ -82,10 +83,16 @@ async def on_message(message):
 					if (len(portmanto) >= len(first) or len(portmanto) >= len(twoth)) and \
 						no_double_consonants(first[j:j + PORTMANTO_BAR]): # and there are no double letters in the shared part
 						if portmanto not in first and portmanto not in twoth and \
-								lev_dist(first, portmanto) > 1 and lev_dist(twoth, portmanto) > 0: # and it's sufficiently distant from its components
+								lev_dist(first, portmanto, {}) > 1 and lev_dist(twoth, portmanto, {}) > 0: # and it's sufficiently distant from its components
 							print(f"epick pun detected: {first} + {twoth} = {portmanto}")
+							pun = f"{portmanto.capitalize()}, if you will."
 							if important or random.random() < 1/3:
-								await message.channel.send(f"{portmanto.capitalize()}, if you will.")
+								try:
+									await message.channel.send(pun)  # and send this one
+								except AttributeError:
+									print("oh sad, I can't send messages to voice channel text channels.")
+							else:
+								client.last_thing_I_was_about_to_say = pun
 							return
 
 	if content == '$roll' or content == '$2d6': # if someone says "/roll" or something of the sort, return a random number [1, 37)
@@ -114,25 +121,28 @@ async def on_message(message):
 			if matched: # if the last line was a match
 				if len(line) > 0:
 					print('sensa retrologe da "{}"'.format(line))
+					for i, group in enumerate(groups): # fill in any groups from that match
+						line = line.replace(f'${i + 1}', group)
 					if important or random.random() < 1/3:
-						for i, group in enumerate(groups): # fill in any groups from that match
-							line = line.replace(f'${i + 1}', group)
 						try:
-							await message.channel.send(line) # and send this one
+							await message.channel.send(line)  # and send this one
 						except AttributeError:
 							print("oh sad, I can't send messages to voice channel text channels.")
-				return
+					else:
+						client.last_thing_I_was_about_to_say = line
+					return
+				break
 			elif len(line) > 0:
 				if line.startswith('/') and line.endswith('/'):
-					bare_content = re.sub(r'[.,;:!?‽\-_\/\'’"“”*>)(]', '', content)
+					bare_content = re.sub(r'[.,;:!?‽\-_/\'’"“”*>)(]', '', content)
 					bare_line = line[1:-1]
 					match = re.search(bare_line, bare_content, re.IGNORECASE) # if this line matches via regex
 					if match:
 						matched = True
 						groups = match.groups() # mark it and save the groops
 				else:
-					bare_content = re.sub(r'[.,;:!?\-_\/\'’"“”*>)( ]', '', content.lower())
-					bare_line = re.sub(r'[.,;:!?‽\-_\/\'’"“”*>)( ]', '', line.lower())
+					bare_content = re.sub(r'[.,;:!?\-_/\'’"“”*>)( ]', '', content.lower())
+					bare_line = re.sub(r'[.,;:!?‽\-_/\'’"“”*>)( ]', '', line.lower())
 					if bare_content == bare_line or (len(bare_line) >= 7 and bare_content.endswith(bare_line)): # if this line matches normally
 						matched = True # mark it
 						groups = []
@@ -161,7 +171,10 @@ async def on_message(message):
 	# if you were atted but have yet to find an adequate response, default to this
 	if important:
 		print("it me!")
-		await message.channel.send("go ga mi!")
-		return
+		if client.last_thing_I_was_about_to_say is not None:
+			await message.channel.send(client.last_thing_I_was_about_to_say)
+			client.last_thing_I_was_about_to_say = None
+		else:
+			await message.channel.send("go ga mi!")
 
 client.run(os.getenv('TOKEN'))
