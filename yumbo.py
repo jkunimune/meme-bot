@@ -143,7 +143,7 @@ async def on_message(message):
 				else:
 					bare_content = re.sub(r'[.,;:!?\-_/\'’"“”*>)( ]', '', content.lower())
 					bare_line = re.sub(r'[.,;:!?‽\-_/\'’"“”*>)( ]', '', line.lower())
-					if bare_content == bare_line or (len(bare_line) >= 7 and bare_content.endswith(bare_line)): # if this line matches normally
+					if bare_content == bare_line or (len(bare_line) >= 9 and bare_content.endswith(bare_line)): # if this line matches normally
 						matched = True # mark it
 						groups = []
 

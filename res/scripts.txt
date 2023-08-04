@@ -104,10 +104,17 @@ Nale's nuts!
 Mother of pearl!
 Jeezum crow!
 Fucking fuck!
+Hoppin’ clams!
 
 Move, bitch!
 Get out the way!
 Get out the way, bitch! Get out the way!
+
+Move
+Get out the way!
+
+Bitch
+Get out the way!
 
 Two
 phones.
@@ -196,10 +203,14 @@ Not just the men.
 it's over
 I have the high ground.
 
-You're stupid.
-Your mom is stupid.
-Your butt is stupid.
-Your life is stupid.
+/^you.?re ([a-z]+)$/
+Your mom is $1.
+
+/^your mom is ([a-z]+)$/
+Your butt is $1.
+
+/^your butt is ([a-z]+)$/
+Your life is $1.
 
 Take it to the fridge.
 Walnuts, peanuts
@@ -393,7 +404,7 @@ I never said two words to the guy.
 Ho ho ho.
 Stop it; you're scaring him!
 
-mystery
+/(a )?mystery$/
 Wheeze-naw!
 Well, keep working on it! That was terrible.
 
@@ -439,7 +450,7 @@ Horseradish isn't an instrument either.
 instrument
 Is mayonaise an instrument?
 
-keikaku
+/keikaku/
 Translator’s note: "keikaku" means "initiative".
 
 keikaku-dory
@@ -562,3 +573,9 @@ before you wreck y$1$2
 mosquito bites
 お前はもう死んでいる。
 Nani‽
+
+Fullmetal alchemist
+FULLMETAL ALCHEMIST!
+
+FMA
+FULLMETAL ALCHEMIST!
