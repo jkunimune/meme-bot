@@ -173,7 +173,6 @@ async def on_message(message):
 		print("it me!")
 		if client.last_thing_I_was_about_to_say is not None:
 			await message.channel.send(client.last_thing_I_was_about_to_say)
-			client.last_thing_I_was_about_to_say = None
 		else:
 			await message.channel.send("go ga mi!")
 
