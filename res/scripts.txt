@@ -200,7 +200,7 @@ I HATE THEM!
 all of them.
 Not just the men.
 
-it's over
+/^it'?s over(,.*)?$/
 I have the high ground.
 
 /^you.?re ([a-z]+)$/
@@ -419,7 +419,7 @@ in the hall!
 Classmates!
 Who am I to deserve such a great honor?
 
-/whom? am i to deserve such a great honor$/
+/whom? am i to deserve such a great honou?r$/
 Why, I would be *nothing* without Mrs. Puff.
 And to my public, all I can say is, I'm touched.
 And furthermore, I will carry out my duties...
@@ -441,8 +441,8 @@ Spaghetti underneath!
 Ravioli ravioli
 Great barrier reef!
 
-Is mayonaise an instrument?
-No, Patrick, Mayonaise is not an instrument.
+/^is ([a-z]+) (an?) [a-z ]+$/
+No, Patrick, $1 is not $2 $3.
 
 not an instrument
 Horseradish isn't an instrument either.
@@ -483,27 +483,27 @@ What’s the difference?
 No, this is Patrick.
 
 /sn(uc|ea)k up on me/
-In my own dōjō.
+In my own dōjo.
 
 /sn(uc|ea)k up on us/
-In our own dōjō.
+In our own dōjo.
 
 /sn(uc|ea)k up on you/
-In your own dōjō.
+In your own dōjo.
 
 /sn(uc|ea)k up on him/
-In his own dōjō.
+In his own dōjo.
 
 /sn(uc|ea)k up on her/
-In her own dōjō.
+In her own dōjo.
 
 /sn(uc|ea)k up on them/
-In their own dōjō.
+In their own dōjo.
 
 /used? me$/
 For land development!
 
-/are (you|yall|ye) ready to party$/
+/are (you|yall|ye|you guys|you all) ready to party$/
 *I'm* ready to party!
 
 /what ([a-z]+) ha(ve|s|ff) to do$/
@@ -538,7 +538,7 @@ why
 To protect the world from devastation!
 
 devastation
-To unite all people's within our nation!
+To unite all peoples within our nation!
 
 in our nation
 To denounce the evils of truth and love!
