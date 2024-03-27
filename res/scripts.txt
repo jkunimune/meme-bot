@@ -20,7 +20,6 @@ Yahaha!
 doot
 doot
 
-Hi
 do not mix
 Please the beans
 
@@ -42,12 +41,12 @@ I'll be careful.
 You'll be dead!
 This little one's not worth your trouble. Now here, let me buy you something.
 
-all right.
 well here's a better question.
 do you wanna have a bad time?
 'cause if you take another step forward...
 you are _really_ not going to like what happens next.
 welp.
+
 sorry, old lady.
 this is why i never make promises.
 it's a beautiful day outside.
@@ -56,7 +55,7 @@ flowers are blooming...
 on days like these...
 kids like you...
 SHOULD BE BURNING IN HELL.
-Danana na. Na na na nanana.
+Danana na. Na na naaa nanana.
 
 A strange light fills the room.
 Sunlight is filtering through the barrier.
@@ -71,32 +70,6 @@ Understand?
 
 /^understand$/
 Through your seventh and final soul, this world will be transformed.
-First, however, as is customary for those who make it this far...
-I shall tell you the tragic tale of our people.
-It all started, long ago...
-No, you know what?
-SCREW IT!
-WHY SHOULD I TELL THAT STORY WHEN YOU'RE ABOUT TO DIE!?!
-NGAAAAAHHHHHHHHHHHHHHHHH!
-YOU!
-You're standing in the way of everybody's hopes and dreams!
-Alphys' history books made me think humans were cool, with their giant robots and flowery swordsman.
-BUT YOU?
-You're just a coward!
-Hiding behind that kid so you could run away from me again!
-And let's not forget your wimpy goody-two-shoes-shtick!
-Oooh! I'm making such a difference by hugging random strangers!
-You know what would be more valuable to everyone?
-IF YOU WERE DEAD!!!
-That's right, human!
-You continued existence is a crime!
-Right now, I can feel everyone's hearts pounding together!
-Step forward when you're ready!
-Fuhuhuhu!
-That's it, then...!
-No more running away!
-HERE I COME!!!!!!!!
-En guarde!
 
 Holy guacamole!
 Hoppin' clams!
@@ -186,7 +159,7 @@ Model rendered.
 
 We should take Bikini Bottom,
 and push it somewhere else!
-That idea might just be crazy enough... TO GET US ALL KILLED!
+That idea might just be crazy enough... _to get us all killed!_
 
 I killed them all.
 They're dead.
@@ -441,13 +414,13 @@ Spaghetti underneath!
 Ravioli ravioli
 Great barrier reef!
 
-/^is ([a-z]+) (an?) [a-z ]+$/
-No, Patrick, $1 is not $2 $3.
+/^is ([a-su-z][a-z][a-z]+) (an? [a-z ]+)$/
+No, Patrick, $1 is not $2.
 
 not an instrument
 Horseradish isn't an instrument either.
 
-instrument
+an instrument
 Is mayonaise an instrument?
 
 /keikaku/
@@ -456,6 +429,7 @@ Translator’s note: "keikaku" means "initiative".
 keikaku-dory
 Translator’s note: "keikaku-dory" means "all according to keikaku"
 
+Firmly grasp it in your hand.
 Firmly grasp it.
 Firmly grasp it.
 
@@ -479,7 +453,7 @@ Uh, stupid?
 No, I’m Texas!
 What’s the difference?
 
-/is this the [a-z ]+$/
+/is this the [a-z]+ [a-z]+$/
 No, this is Patrick.
 
 /sn(uc|ea)k up on me/
@@ -518,7 +492,7 @@ $1y ’er? I hardly know ’er!
 /wait it(s| is) all [a-z ]+$/
 🔫 Always has been.
 
-/it(s| is) all ([a-z ]+)$/
+/it(s| is) all ([a-z]+)$/
 Wait. It's *all* $2?
 
 /how ([a-z]+) are y(ou|a|e)$/
@@ -533,9 +507,6 @@ Right this way, sir.
 
 /thank( you|s).*yumbo/
 Don't touch the mustash. :blep:
-
-why
-To protect the world from devastation!
 
 devastation
 To unite all peoples within our nation!
@@ -579,3 +550,6 @@ FULLMETAL ALCHEMIST!
 
 FMA
 FULLMETAL ALCHEMIST!
+
+hahaha
+Is this a joke to you‽
