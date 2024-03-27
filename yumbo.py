@@ -19,7 +19,10 @@ SONGS = {
 	'aisunao':    ["japan", "naoshima", "restaurant", "aisunao"],
 	'hello':      ["hello", "hear me", "hear you", "you still there", "anyone there"],
 	'photograph': ["photograph", "look at this", "it makes me laugh"],
-	'objection':  ["objection", "hold it", "not so fast", "stop right there", "lies"],
+	'objection':  ["object", "contradict", "lies"],
+	'wait':       ["wait", "hold it", "not so fast", "stop right there"],
+	'eureka':     ["eureka", "ohh", "thats it", "that's it"],
+	'samurai':    ["steel", "samurai"],
 	'why':        ["why"],
 }
 REACTIONS = {
