@@ -30,7 +30,12 @@ REACTIONS = {
 
 load_dotenv()
 
-client = discord.Client()
+client = discord.Client(intents=discord.Intents(
+	messages=True,
+	message_content=True,
+	guilds=True,
+	voice_states=True,
+))
 client.last_thing_I_was_about_to_say = None
 client.ready_to_play = True
 client.blacklist = []
