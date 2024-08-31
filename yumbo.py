@@ -184,4 +184,7 @@ async def on_message(message):
 		else:
 			await message.channel.send("go ga mi!")
 
-client.run(os.getenv('TOKEN'))
+if os.getenv('TOKEN') is None:
+	print("The $TOKEN environment variable has not been set so I can't log in.")
+else:
+	client.run(os.getenv('TOKEN'))
