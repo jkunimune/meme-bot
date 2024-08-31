@@ -1,8 +1,13 @@
 Yumbo
 I live.
 
-Spill
+
 I just wanted to see what would happen if I did this.
+I was eating those beans.
+
+Spill
+You eat like a pig.
+Try the floor.
 I was eating those beans.
 Are you fucking insane?
 I was _eating those BEANS_!
@@ -553,3 +558,62 @@ FULLMETAL ALCHEMIST!
 
 hahaha
 Is this a joke to you‽
+
+/^where did you learn/
+Yale
+John Hopkins
+Dominos Pizza
+
+welcome to the Palace.
+You can call me Dan.
+I'm making all these pizzas just as fast as I can.
+You can phone the Palace, deliver it, man.
+'Cause here at the Palace,
+we don't want to wash our hands!
+
+/what am I go(ing to|nna) do/
+Go to Domino's Pizza!
+Domino's Pizza?
+Yes, Domino's Pizza.
+Alright. I'll do it!
+
+Certainly
+Indeed, is there a way.
+
+This is Domino's Pizza
+You can call me Dan.
+I'm making all these pizzas just like Tom Monaghan.
+Working at Domino's Pizza sanitation is the plan.
+It's not like at the Palace,
+'cause we prefer to wash our hands!
+
+floor
+Your floors may look clean, but they're probably not.
+
+get in here
+even though I've got the flu?
+
+germs
+There ain't no germs on pizza, 'cause we bake them at five hundred thirty-two!
+
+bacteria
+Bacteria's a bunch of fooey.
+It's a town outside St. Looey.
+There's no place to wash pans;
+The water here just went blooey.
+It really doesn't matter
+when the pizza's on the platter.
+Because once you get down to it
+
+/([a-z ]+) arent real$/
+$1 are real in Japan.
+
+/([a-z ]+) dont exist$/
+$1 exist in Japan.
+
+/cant touch [a-z]+$/
+like Gojo.
+
+/its [a-z]+$/
+It's a big lump with knobs.
+It has the juice.
