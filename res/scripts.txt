@@ -604,6 +604,8 @@ The water here just went blooey.
 It really doesn't matter
 when the pizza's on the platter.
 Because once you get down to it
+We don't wanna wash our hands!
+Ahhh.
 
 /([a-z ]+) arent real$/
 $1 are real in Japan.
@@ -614,6 +616,21 @@ $1 exist in Japan.
 /cant touch [a-z]+$/
 like Gojo.
 
-/its [a-z]+$/
+/^its [a-z]+$/
 It's a big lump with knobs.
 It has the juice.
+
+The moment
+has arrived for fighting.
+
+The moment has arrived
+FOR FIGHTING.  THERE IS NO ESCAPE OR HIDING.  THE DARKNESS WILL BE BROKEN OPEN.  SHATTERED BY THE CRIMSON LIGHTNING.
+
+Full Metal Alchemist
+Full Metal Alchemist
+
+FMA
+Full Metal Alchemist
+
+FMAB
+Full Metal Alchemist
