@@ -82,26 +82,27 @@ async def on_message(message):
 		content = re.sub(r"<@[0-9]+>", "", content).strip()
 
 	words = content.lower().split() # make combinacion puns
-	for i in range(max(0, len(words) - 16), len(words) - 1): # if it's near the end of the message
-		first, twoth = words[i], words[i+1]
-		if re.fullmatch(r'[a-z]+', first) and re.fullmatch(r'[a-z]+', twoth): # and both components are purely alphabetical
-			for j in range(1, len(first) - PORTMANTO_BAR):
-				if first[j:j + PORTMANTO_BAR] in twoth: # and you sense a portman
-					portmanto = first[:j] + twoth[twoth.index(first[j:j + PORTMANTO_BAR]):]
-					if (len(portmanto) >= len(first) or len(portmanto) >= len(twoth)) and \
-						no_double_consonants(first[j:j + PORTMANTO_BAR]): # and there are no double letters in the shared part
-						if portmanto not in first and portmanto not in twoth and \
-								lev_dist(first, portmanto, {}) > 1 and lev_dist(twoth, portmanto, {}) > 0: # and it's sufficiently distant from its components
-							print(f"epick pun detected: {first} + {twoth} = {portmanto}")
-							pun = f"{portmanto.capitalize()}, if you will."
-							if important or random.random() < 1/3:
-								try:
-									await message.channel.send(pun)  # and send this one
-								except AttributeError:
-									print("oh sad, I can't send messages to voice channel text channels.")
-							else:
-								client.last_thing_I_was_about_to_say = pun
-							return
+	if len(words) < 20:
+		for i in range(max(0, len(words) - 10), len(words) - 1): # if it's near the end of the message
+			first, twoth = words[i], words[i+1]
+			if re.fullmatch(r'[a-z]+', first) and re.fullmatch(r'[a-z]+', twoth): # and both components are purely alphabetical
+				for j in range(1, len(first) - PORTMANTO_BAR):
+					if first[j:j + PORTMANTO_BAR] in twoth: # and you sense a portman
+						portmanto = first[:j] + twoth[twoth.index(first[j:j + PORTMANTO_BAR]):]
+						if (len(portmanto) >= len(first) or len(portmanto) >= len(twoth)) and \
+							no_double_consonants(first[j:j + PORTMANTO_BAR]): # and there are no double letters in the shared part
+							if portmanto not in first and portmanto not in twoth and \
+									lev_dist(first, portmanto, {}) > 1 and lev_dist(twoth, portmanto, {}) > 0: # and it's sufficiently distant from its components
+								print(f"epick pun detected: {first} + {twoth} = {portmanto}")
+								pun = f"{portmanto.capitalize()}, if you will."
+								if important or random.random() < 1/3:
+									try:
+										await message.channel.send(pun)  # and send this one
+									except AttributeError:
+										print("oh sad, I can't send messages to voice channel text channels.")
+								else:
+									client.last_thing_I_was_about_to_say = pun
+								return
 
 	if content == '$roll' or content == '$2d6': # if someone says "/roll" or something of the sort, return a random number [1, 37)
 		await message.channel.send("(sound of rolling dies)")

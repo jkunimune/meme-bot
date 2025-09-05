@@ -616,7 +616,7 @@ $1 exist in Japan.
 /cant touch [a-z]+$/
 like Gojo.
 
-/^its [a-z]+$/
+/^its [a-mo-su-z][a-z][a-z][a-ce-z]$/
 It's a big lump with knobs.
 It has the juice.
 
