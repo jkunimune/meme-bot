@@ -95,7 +95,7 @@ async def on_message(message):
 									lev_dist(first, portmanto, {}) > 1 and lev_dist(twoth, portmanto, {}) > 0: # and it's sufficiently distant from its components
 								print(f"epick pun detected: {first} + {twoth} = {portmanto}")
 								pun = f"{portmanto.capitalize()}, if you will."
-								if important or random.random() < 1/3:
+								if important or random.random() < 1/6:
 									try:
 										await message.channel.send(pun)  # and send this one
 									except AttributeError:
@@ -132,7 +132,9 @@ async def on_message(message):
 					print('sensa retrologe da "{}"'.format(line))
 					for i, group in enumerate(groups): # fill in any groups from that match
 						line = line.replace(f'${i + 1}', group)
-					if important or random.random() < 1/3:
+					annoying = "I hardly know" in line
+					chance = 1/6 if annoying else 1/3
+					if important or random.random() < chance:
 						try:
 							await message.channel.send(line)  # and send this one
 						except AttributeError:
