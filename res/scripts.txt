@@ -482,6 +482,9 @@ In their own dōjo.
 /used? me$/
 For land development!
 
+/you used? (a |the |)[a-z]+$/
+For land development!
+
 /are (you|yall|ye|you guys|you all) ready to party$/
 *I'm* ready to party!
 
@@ -500,7 +503,7 @@ $1y ’er? I hardly know ’er!
 /it(s| is) all ([a-z]+)$/
 Wait. It's *all* $2?
 
-/how ([a-z]+) are y(ou|a|e)$/
+/how ([a-z]+) are y(ou|a|e|all)$/
 How $1 am I? How $1 am I‽ I ate a bowl of nails for breakfast this morning.
 
 bowl of nails for breakfast this morning
@@ -551,17 +554,15 @@ mosquito bites
 Nani‽
 
 Fullmetal alchemist
-FULLMETAL ALCHEMIST!
+Fullmetal Alchemist!
 
 FMA
-FULLMETAL ALCHEMIST!
+Fullmetal Alchemist!
 
 hahaha
 Is this a joke to you‽
 
 /^where did you learn/
-Yale
-John Hopkins
 Dominos Pizza
 
 welcome to the Palace.
@@ -620,11 +621,17 @@ like Gojo.
 It's a big lump with knobs.
 It has the juice.
 
+/and (we|you|they) were ([a-z]+)$/
+Oh my god, $1 were $2.
+
 The moment
 has arrived for fighting.
 
 The moment has arrived
 FOR FIGHTING.  THERE IS NO ESCAPE OR HIDING.  THE DARKNESS WILL BE BROKEN OPEN.  SHATTERED BY THE CRIMSON LIGHTNING.
+
+/the moment has arrived for [a-z]([a-z]+ing)$/
+THERE IS NO ESCAPE OR H$1.  THE DARKNESS WILL BE BROKEN OPEN.  SHATTERED BY THE CRIMSON L$1.
 
 Full Metal Alchemist
 Full Metal Alchemist
